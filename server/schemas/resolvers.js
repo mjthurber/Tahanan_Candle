@@ -56,6 +56,13 @@ const resolvers = {
             product_data: {
               name: product.name,
               description: product.description,
+              topNotes: product.topNotes,
+              middleNotes: product.middleNotes,
+              baseNotes: product.baseNotes,
+              signatureNotes: product.signatureNotes,
+              inspiration: product.inspiration,
+              intendedExperience: product.intendedExperience,
+              pleaseNote: product.pleaseNote,
               size: product.size,
               images: [`${url}/images/${product.image}`]
             },
