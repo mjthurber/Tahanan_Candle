@@ -7,6 +7,7 @@ const typeDefs = `
     image: String
     quantity: Int
     price: Float
+    size: String
   }
 
   type Order {
