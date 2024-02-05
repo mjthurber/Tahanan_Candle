@@ -1,7 +1,7 @@
 # Tahanan Candle Company
 
 ## Description
-This website is for a small, Filipina-owned candle company based in SLC, Utah. We created this project to help the client sell their uniquely sented candles inspired from Philippines scents and culture.
+This website is for a small, Filipina-owned candle company based in SLC, Utah. We created this project to help the client sell their uniquely scented candles inspired from Philippines scents and culture.
 
 
 ## Table of Contents
@@ -9,7 +9,6 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Tests](#tests)
 - [Features](#features)
 - [Credits](#credits)
 
@@ -23,17 +22,20 @@ What are the steps required to install your project? Provide a step-by-step desc
 Provide instructions and examples for use. Include screenshots as needed. 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:  
 ![project screenshots]()  
-![project screenshots]()
+![project screenshots]()  
 
-## Tests
-
+Steps to run project in VS Code  
+1. ```npm run seed```  
+2. ```npm run build```  
+3. ```npm run start```
 
 ## Features
-If your project has a lot of features, list them here.
+- Users can create/login to an account
+- View list of items available for purchase
+- Add items to cart and checkout
 
 
 ## Credits
-
 The collaborators for this project were:  
 [Matthew Thurber](https://github.com/mjthurber)  
 [Whitney Brady](https://github.com/whitbreezy)  
