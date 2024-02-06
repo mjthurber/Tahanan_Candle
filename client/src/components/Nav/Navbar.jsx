@@ -3,8 +3,8 @@ import React from 'react';
 import './Navbar.css';
 
 // Import logo and cart icon from assets folder
-import logo from '../assets/logo.png'
-import cart_icon from '../assets/cart_icon5.png'
+import logo from '../../assets/logo.png'
+import cart_icon from '../../assets/cart_icon5.png'
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {

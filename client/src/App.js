@@ -1,13 +1,13 @@
 
 import './App.css';
-import Navbar from './Components/Nav/Navbar';
+import Navbar from './components/Nav/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home';
-import About from './Pages/About';
-import Products from './Pages/Products';
-import LoginSignup from './Pages/LoginSignup';
-import ShoppingCart from './Pages/ShoppingCart';
-import ShopCategory from './Pages/ShopCategory';
+import Home from '../src/pages/Home';
+import About from '../src/pages/About';
+import Products from '../src/pages/Products';
+import LoginSignup from '../src/pages/LoginSignup';
+import ShoppingCart from '../src/pages/ShoppingCart';
+import ShopCategory from '../src/pages/ShopCategory';
 
 function App() {
   return (
