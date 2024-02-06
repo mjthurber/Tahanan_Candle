@@ -11,6 +11,24 @@ const productSchema = new Schema({
   description: {
     type: String
   },
+  fragranceNotes: {
+    type: String
+  },
+  signatureNotes: {
+    type: String
+  },
+  inspiration: {
+    type: String
+  },
+  intendedExperience: {
+    type: String
+  },
+  pleaseNote: {
+    type: String
+  },
+  size: {
+    type: String
+  },
   image: {
     type: String
   },
