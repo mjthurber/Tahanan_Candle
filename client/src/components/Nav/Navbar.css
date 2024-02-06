@@ -5,10 +5,8 @@
 
 .navbar_logo {
     display: flex;
-    img{
-        width: 200px;
-        height: 100px;
-        }
+    max-width: 100px;
+    max-height: 100px;
     align-items: center;
 }
 
@@ -16,10 +14,11 @@
     display:flex;
     align-items: center;
     list-style: none;
-    gap: 120px;
+    gap: 40px;
     color: rgb(9, 9, 9);
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
+    
 }
 
 .navbar_links li {
@@ -37,6 +36,16 @@
     height: 3px;
     border-radius: 10px;
     background:  rgb(246, 218, 5);
+}
+.nav-link{
+    font-family:'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+.nav-link.active{
+    text-decoration: underline!important;
+    text-decoration-color: rgb(246, 218, 5);
+    font-weight: bold!important;
 }
 
 .navbar_links button {
@@ -67,6 +76,7 @@
 
 .navbar_cart img {
     cursor: pointer;
+    max-width: 50px;
 }
 
 .nav-cart-count {
