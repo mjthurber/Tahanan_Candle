@@ -32,19 +32,19 @@ const productSchema = new Schema({
   image: {
     type: String
   },
+  quantity: {
+    type: Number,
+    min: 0,
+    default: 0
+  },
   price: {
     type: Number,
     required: true,
     min: 0.99
   },
   size: {
-    type: Number
+    type: String,
   },
-  quantity: {
-    type: Number,
-    min: 0,
-    default: 0
-  }
 });
 
 const Product = mongoose.model('Product', productSchema);
