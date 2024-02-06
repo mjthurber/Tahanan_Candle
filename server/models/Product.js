@@ -11,8 +11,34 @@ const productSchema = new Schema({
   description: {
     type: String
   },
+  topNotes: {
+    type: String
+  },
+  middleNotes: {
+    type: String
+  },
+  baseNotes: {
+    type: String
+  },
+  signatureNotes: {
+    type: String
+  },
+  inspiration: {
+    type: String
+  },
+  intendedExperience: {
+    type: String
+  },
+  pleaseNote: {
+    type: String
+  },
   image: {
     type: String
+  },
+  quantity: {
+    type: Number,
+    min: 0,
+    default: 0
   },
   price: {
     type: Number,
@@ -20,13 +46,8 @@ const productSchema = new Schema({
     min: 0.99
   },
   size: {
-    type: Number
+    type: String,
   },
-  quantity: {
-    type: Number,
-    min: 0,
-    default: 0
-  }
 });
 
 const Product = mongoose.model('Product', productSchema);
