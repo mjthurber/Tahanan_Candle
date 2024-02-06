@@ -11,13 +11,7 @@ const productSchema = new Schema({
   description: {
     type: String
   },
-  topNotes: {
-    type: String
-  },
-  middleNotes: {
-    type: String
-  },
-  baseNotes: {
+  fragranceNotes: {
     type: String
   },
   signatureNotes: {
@@ -30,6 +24,9 @@ const productSchema = new Schema({
     type: String
   },
   pleaseNote: {
+    type: String
+  },
+  size: {
     type: String
   },
   image: {
