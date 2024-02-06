@@ -4,9 +4,17 @@ const typeDefs = `
     _id: ID
     name: String
     description: String
+    topNotes: String
+    middleNotes: String
+    baseNotes: String
+    signatureNotes: String
+    inspiration: String
+    intendedExperience: String
+    pleaseNote: String
     image: String
     quantity: Int
     price: Float
+    size: String
   }
 
   type Order {
