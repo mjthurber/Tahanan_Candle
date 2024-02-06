@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
-import owner from "../assets/owner.jpg";
-import arrow_icon from "../assets/arrow_icon.png";
+import owner from "../../assets/owner.jpg";
+import arrow_icon from "../../assets/arrow_icon.png";
 
 const Hero = () => {
   return (
