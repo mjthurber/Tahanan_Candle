@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+/* import { useEffect } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import { useLazyQuery } from '@apollo/client';
 import { QUERY_CHECKOUT } from '../../utils/queries';
@@ -87,7 +87,6 @@ const Cart = () => {
           <div className="flex-row space-between">
             <strong>Total: ${calculateTotal()}</strong>
 
-            {/* Check to see if the user is logged in. If so render a button to check out */}
             {Auth.loggedIn() ? (
               <button onClick={submitCheckout}>Checkout</button>
             ) : (
@@ -108,3 +107,4 @@ const Cart = () => {
 };
 
 export default Cart;
+ */

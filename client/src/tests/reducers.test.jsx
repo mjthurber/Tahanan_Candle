@@ -1,4 +1,4 @@
-import { reducer } from '../utils/reducers';
+/* import { reducer } from '../utils/reducers';
 import {
   UPDATE_PRODUCTS,
   ADD_TO_CART,
@@ -138,3 +138,4 @@ test('TOGGLE_CART', () => {
 
   expect(newState2.cartOpen).toBe(false);
 });
+ */

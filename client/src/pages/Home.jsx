@@ -1,13 +1,12 @@
-import ProductList from "../components/ProductList";
-import Cart from "../components/Cart";
+import React from 'react'
+import Hero from '../components/Hero/Hero'
 
 const Home = () => {
   return (
-    <div className="container">
-      <ProductList />
-      <Cart />
+    <div>
+      <Hero/>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
