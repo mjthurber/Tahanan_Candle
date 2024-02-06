@@ -56,7 +56,7 @@ const resolvers = {
             product_data: {
               name: product.name,
               description: product.description,
-              topNotes: product.topNotes,
+              fragranceNotes: product.fragranceNotes,
               middleNotes: product.middleNotes,
               baseNotes: product.baseNotes,
               signatureNotes: product.signatureNotes,
