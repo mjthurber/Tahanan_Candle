@@ -7,6 +7,7 @@ const typeDefs = `
     image: String
     quantity: Int
     price: Float
+    size: Int
   }
 
   type Order {
@@ -39,6 +40,7 @@ const typeDefs = `
     image: String
     price: Float
     quantity: Int
+    size: Int
   }
 
   type Query {
