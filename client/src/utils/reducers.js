@@ -1,4 +1,4 @@
-import {
+/* import {
   UPDATE_PRODUCTS,
   ADD_TO_CART,
   UPDATE_CART_QUANTITY,
@@ -69,3 +69,4 @@ export const reducer = (state, action) => {
       return state;
   }
 };
+ */
