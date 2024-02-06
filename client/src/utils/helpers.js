@@ -1,4 +1,4 @@
-/* export function pluralize(name, count) {
+export function pluralize(name, count) {
   if (count === 1) {
     return name;
   }
@@ -12,7 +12,6 @@ export function idbPromise(storeName, method, object) {
     request.onupgradeneeded = function(e) {
       const db = request.result;
       db.createObjectStore('products', { keyPath: '_id' });
-      db.createObjectStore('categories', { keyPath: '_id' });
       db.createObjectStore('cart', { keyPath: '_id' });
     };
 
@@ -54,4 +53,3 @@ export function idbPromise(storeName, method, object) {
     };
   });
 }
- */

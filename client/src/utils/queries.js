@@ -1,4 +1,4 @@
-/* import { gql } from '@apollo/client';
+import { gql } from '@apollo/client';
 
 export const QUERY_PRODUCTS = gql`
   query getProducts() {
@@ -9,6 +9,7 @@ export const QUERY_PRODUCTS = gql`
       price
       quantity
       image
+      size
     }
   }
 `;
@@ -54,4 +55,3 @@ export const QUERY_USER = gql`
     }
   }
 `;
- */

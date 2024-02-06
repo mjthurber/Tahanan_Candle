@@ -1,4 +1,4 @@
-/* import { createContext, useContext, useReducer } from "react";
+import { createContext, useContext, useReducer } from "react";
 import { reducer } from './reducers'
 
 const StoreContext = createContext();
@@ -9,8 +9,6 @@ const StoreProvider = ({ value = [], ...props }) => {
     products: [],
     cart: [],
     cartOpen: false,
-    categories: [],
-    currentCategory: '',
   });
 
   return <Provider value={[state, dispatch]} {...props} />;
@@ -21,4 +19,3 @@ const useStoreContext = () => {
 };
 
 export { StoreProvider, useStoreContext };
- */
