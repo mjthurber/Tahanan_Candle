@@ -21,7 +21,8 @@ const [menu, setMenu] = React.useState("home");
                 <li onClick={()=>{setMenu("home")}}><Link style={{ textDecoration: 'none' }} to='/'>Home</Link>{menu==="home"?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu("about")}}><Link style={{ textDecoration: 'none' }} to='/about'>About</Link>{menu==="about"?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu("candles")}}><Link style={{ textDecoration: 'none' }} to='/candles'>Shop Candles</Link>{menu==="candles"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("bundles")}}><Link style={{ textDecoration: 'none' }} to='/bundles'>Shop Bundles</Link>{menu==="bundles"?<hr/>:<></>}</li>
+                {/* <li onClick={()=>{setMenu("bundles")}}><Link style={{ textDecoration: 'none' }} to='/bundles'>Shop Bundles</Link>{menu==="bundles"?<hr/>:<></>}</li> */}
+                <li onClick={()=>{setMenu("contact")}}><Link style={{ textDecoration: 'none' }} to='/contact'>Contact</Link>{menu==="contact"?<hr/>:<></>}</li>
                 <Link to='/login'><button>Login</button></Link>
             </ul>
             <div className='navbar_cart'>
