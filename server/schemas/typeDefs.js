@@ -52,6 +52,7 @@ const typeDefs = `
     products(name: String): [Product]
     product(_id: ID!): Product
     user: User
+    users: [User]
     order(_id: ID!): Order
     checkout(products: [ProductInput]): Checkout
   }
