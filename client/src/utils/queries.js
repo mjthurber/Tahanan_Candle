@@ -6,6 +6,11 @@ export const QUERY_PRODUCTS = gql`
       _id
       name
       description
+      fragranceNotes
+      signatureNotes
+      inspiration
+      intendedExperience
+      pleaseNote
       price
       quantity
       image
@@ -28,8 +33,15 @@ export const QUERY_ALL_PRODUCTS = gql`
       _id
       name
       description
+      fragranceNotes
+      signatureNotes
+      inspiration
+      intendedExperience
+      pleaseNote
       price
       quantity
+      image
+      size
     }
   }
 `;
@@ -47,9 +59,15 @@ export const QUERY_USER = gql`
           _id
           name
           description
+          fragranceNotes
+          signatureNotes
+          inspiration
+          intendedExperience
+          pleaseNote
           price
           quantity
           image
+          size
         }
       }
     }

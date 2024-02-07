@@ -1,4 +1,5 @@
 import React from "react";
+import Header from '../components/Header/Header';
 import owner from "../assets/owner.jpg";
 import pandan from "../assets/Pandan_8oz.jpg";
 import ubelicious from "../assets/Ubelicious_8oz.jpg";
@@ -10,7 +11,10 @@ import "./about.css";
 
 const About = () => {
   return (
-    <main>
+    <>
+    <Header/>
+
+     <main>
         <div className="flex">
           <img className="aboutImages" src={owner} alt="owner" />
           <div>
@@ -100,6 +104,8 @@ const About = () => {
         </p>
         <p>Sincerely, The Tahanan Candle Co. Owner, Jez</p>
     </main>
+    </>
+   
   );
 };
 

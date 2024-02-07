@@ -88,7 +88,7 @@
     color: white;
 }
 
-
+/* 
 @media only screen and (max-width: 800px) {
     .navbar {
         margin-bottom: 5%;
@@ -109,7 +109,6 @@
         display:block;
         align-items: center;
         list-style: none;
-        /* gap: 120px; */
         padding: 2%;
         margin: 2%;
         width: 50%;
@@ -133,4 +132,4 @@
         width: 100%;
         text-align: center;
     }
-}
+} */
