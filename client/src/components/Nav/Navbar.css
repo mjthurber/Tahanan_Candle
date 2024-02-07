@@ -1,6 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-around;
+    padding: 1%;
 }
 
 .navbar_logo {
@@ -14,9 +15,12 @@
 
 .navbar_links {
     display:flex;
+    flex-wrap: wrap;
     align-items: center;
     list-style: none;
-    gap: 120px;
+    /* gap: 120px; */
+    padding: auto 2%;
+    margin: auto 10px;
     color: rgb(9, 9, 9);
     font-size: 25px;
     font-weight: 500;
@@ -27,7 +31,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3px;
+    /* gap: 3px; */
+    margin: auto 10px;
     cursor: pointer;
 }
 
@@ -81,4 +86,51 @@
     font-size: 14px;
     background: rgb(209, 15, 15);
     color: white;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .navbar {
+        margin-bottom: 5%;
+    }
+
+    .navbar_logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+        img{
+            width: 200px;
+            height: 100px;
+            }
+        align-items: center;
+    }
+
+    .navbar_links {
+        display:block;
+        align-items: center;
+        list-style: none;
+        /* gap: 120px; */
+        padding: 2%;
+        margin: 2%;
+        width: 50%;
+        color: rgb(9, 9, 9);
+        font-size: 25px;
+        font-weight: 500;
+    }
+    
+    .navbar_links li {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 2%;
+        cursor: pointer;
+    }
+
+    .navbar_cart {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
