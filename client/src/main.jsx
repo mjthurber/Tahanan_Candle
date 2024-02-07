@@ -12,6 +12,7 @@ import ShoppingCart from './pages/ShoppingCart';
 import ShopCategory from './pages/ShopCategory';
 
 
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -28,13 +29,10 @@ const router = createBrowserRouter([
         element: <About />
       }, {
         path: '/candles',
-        element: <ShopCategory category="candles" />
+        element: <Products />
       }, {
         path: '/bundles',
         element: <ShopCategory category="bundles" />
-      }, {
-        path: '/products',
-        element: <Products />
       },
       {
         path: '/products/:productId',
