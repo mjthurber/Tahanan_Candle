@@ -1,52 +1,14 @@
 .hero {
     height: 65vh;
     background-image: linear-gradient(rgba(253, 253, 253, 0.099), rgba(50, 50, 50, 0.162)),url("../../assets/hero-background.jpg");
-    background-size: 100%;
     background-position: center;
     display: flex;
 }
 
-.hero-left {
-    font-family: 'Bodoni Moda', serif;
+.arrow {
+    height: 50px;
+    width: 50px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 20px;
-    padding: 150px 150px;
-    line-height:0.3;
-}
 
-.hero-left img {
-    width: 450px;
-    height: 450px;
-    border-radius: 60px; /*or 360px for circle frame*/
-}
-
-.hero-left h1 {
-    font-size: 40px;
-    font-weight: 700;
-    color: white;
-}
-
-.hero-left p {
-    display: flex;
-    justify-content: start;
-    font-size: 25px;
-    font-weight: 350;
-    color: white;
-}
-
-.hero-btn {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: end;
-    gap: 10px;
-    margin-top: 10px;
-    color: rgb(0, 0, 0)
-}
-
-.hero-btn img {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
 }
