@@ -1,8 +1,29 @@
 .hero {
+    font-family: 'Bodoni Moda', serif;
     height: 65vh;
     background-image: linear-gradient(rgba(253, 253, 253, 0.099), rgba(50, 50, 50, 0.162)),url("../../assets/hero-background.jpg");
     background-position: center;
     display: flex;
+}
+
+.hero-card {
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.451);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.mb-2{
+    font-size: 20px;
 }
 
 .arrow {
