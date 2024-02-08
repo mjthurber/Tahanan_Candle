@@ -11,7 +11,7 @@ import kalamansi from '../assets/Kalamansi_Flower_8oz.jpg'
 const Products = ({candles}) => {
   return (
     <div>
-      <Header/>
+      <Header pageName={"Candles"}/>
       <Container className='mt-5'>
         <h2> Our Candles</h2>
         <p>Our candle fragrances were inspired by the rich aromas of tropical blooms, exotic fruits, and the essence of Filipino culture. Each candle comes in an 8oz. and 12oz. size. Bring a touch of the Philippines into your home today.</p>
