@@ -14,7 +14,7 @@ function ProductList(products) {
         {products.products.map((item) => (
           <Col lg={true} key={item._id} className='m-1'>
             <Card className="bg-dark text-white">
-              <Card.Img src={item.image} alt="Candle image" />
+              <Card.Img src={`/images/${item.image}`} alt="Candle image" />
               <Card.Body>
                 <Card.Title>{item.name}</Card.Title>
                 <Card.Text>
