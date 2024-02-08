@@ -21,7 +21,7 @@ const Shop = () => {
   <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={kalamansi} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>KALAMANSI FLOWER 🌼 </Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
@@ -43,7 +43,7 @@ const Shop = () => {
   <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={pandan} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>PANDAN 🥥</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
@@ -65,7 +65,7 @@ const Shop = () => {
   <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={ubelicious} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>UBELICIOUS ✨ </Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
