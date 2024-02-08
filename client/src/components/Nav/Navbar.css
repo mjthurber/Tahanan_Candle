@@ -4,3 +4,12 @@
     font-weight: 600;
     color: black;
 }
+
+.r-nav{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    align-items:center;
+}

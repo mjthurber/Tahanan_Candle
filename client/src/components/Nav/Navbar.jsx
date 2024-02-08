@@ -6,7 +6,7 @@ import "./Navbar.css";
 import logo from "../../assets/logo.png";
 import cart_icon from "../../assets/cart_icon5.png";
 
-
+import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -33,8 +33,8 @@ function Navigation() {
             <Nav.Link href="#candles">Shop Candles</Nav.Link>
             <Nav.Link href="#bundles">Shop Budles</Nav.Link>
           </Nav>
-          <Nav>
-            <Nav.Link href="#login">Login</Nav.Link>
+          <Nav className='r-nav'>
+          <Nav.Link href="#login">Login</Nav.Link>
             <Nav.Link eventKey={2} href="#cart">
             <img
             src={cart_icon}
