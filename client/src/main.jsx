@@ -7,7 +7,7 @@ import App from './App.jsx';
 import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
-import LoginSignup from './pages/LoginSignup';
+import Login from './pages/Login';
 import ShoppingCart from './pages/ShoppingCart';
 import ShopCategory from './pages/ShopCategory';
 
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         element: <Home />
       }, {
         path: '/login',
-        element: <LoginSignup />
+        element: <Login />
       }, {
         path: '/about',
         element: <About />
