@@ -12,25 +12,24 @@ import "./about.css";
 
 const About = () => {
   return (
-    <><div>
-      <Nav />
-    </div><>
-        <Header />
+    <>
+    <Nav/>
+    <Header pageName={"About Us"}/>
 
-        <main>
-          <div className="flex">
-            <img className="aboutImages" src={owner} alt="owner" />
-            <div>
-              <h1>Mabuhay!</h1>
-              <p>
-                Welcome to <b>Tahanan Candle Co.</b>, where I invite you to embark
-                on an olfactory journey through the vibrant landscapes, rich
-                traditions, and diverse culture of the Philippines. My scented
-                candles are more than just a collection of fragrances; they're a
-                homage to the beauty and spirit of the archipelago.
-              </p>
-            </div>
+     <main>
+        <div className="flex">
+          <img className="aboutImages" src={owner} alt="owner" />
+          <div>
+            <h1>Mabuhay!</h1>
+            <p>
+              Welcome to <b>Tahanan Candle Co.</b>, where I invite you to embark
+              on an olfactory journey through the vibrant landscapes, rich
+              traditions, and diverse culture of the Philippines. My scented
+              candles are more than just a collection of fragrances; they're a
+              homage to the beauty and spirit of the archipelago.
+            </p>
           </div>
+        </div>
 
           <div>
             <p>
@@ -101,13 +100,13 @@ const About = () => {
             </p>
           </div>
 
-          <p>
-            Thank you for joining us on this aromatic voyage. I am delighted to
-            share the Philippines with you, one scent at a time.
-          </p>
-          <p>Sincerely, The Tahanan Candle Co. Owner, Jez</p>
-        </main>
-      </></>
+        <p>
+          Thank you for joining us on this aromatic voyage. I am delighted to
+          share the Philippines with you, one scent at a time.
+        </p>
+        <p>Sincerely, The Tahanan Candle Co. Owner, Jez</p>
+    </main>
+    </>
    
   );
 };

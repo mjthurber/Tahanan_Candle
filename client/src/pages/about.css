@@ -49,10 +49,4 @@ p {
     .flex h1, .flex p {
         text-align: left;
     }
-    .aboutImages {
-        width: auto;
-        max-height: 200px;
-        border-radius: 50%;
-        margin: auto;
-    }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/Header/Header'
+import Nav from '../components/Nav/Navbar'
 import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
 
 import { useQuery } from '@apollo/client'
 import { QUERY_ALL_PRODUCTS } from '../utils/queries'
@@ -16,6 +16,7 @@ const Products = () => {
 
   return (
     <div>
+      <Nav/>
       <Header pageName={"Candles"}/>
       <Container className='mt-5'>
         <h2> Our Candles</h2>

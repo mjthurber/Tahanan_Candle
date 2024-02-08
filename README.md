@@ -26,8 +26,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 Steps to run project in VS Code  
 1. ```npm run seed```  
-2. ```npm run build```  
-3. ```npm run start```
+2. ```npm run develop```
 
 ## Features
 - Users can create/login to an account

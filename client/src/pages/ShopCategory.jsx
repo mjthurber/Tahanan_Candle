@@ -1,8 +1,15 @@
 import React from 'react'
+import Nav from '../components/Nav/Navbar'
+import Header from '../components/Header/Header'
+
 
 const ShopCategory = () => {
   return (
-    <div>ShopCategory</div>
+    <>
+      <Nav />
+      <Header pageName={"Shop Bundles"} />
+      <div>ShopCategory</div>
+    </>
   )
 }
 
