@@ -38,6 +38,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
+import Auth from '../../utils/auth'
 
 function Navigation() {
   return (
@@ -54,7 +55,7 @@ function Navigation() {
         </Navbar.Brand>
       </Container>
 
-      <Navbar.Brand href="#home"></Navbar.Brand>
+      <Navbar.Brand href="/"></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
       <Nav className="me-auto">
@@ -62,7 +63,11 @@ function Navigation() {
         <Nav.Link href="/about">About</Nav.Link>
         <Nav.Link href="/candles">Shop Candles</Nav.Link>
         <Nav.Link href="/bundles">Shop Bundles</Nav.Link>
-        <Nav.Link href="/login"><Button class="nav-btn">Login</Button></Nav.Link>
+        {Auth.loggedIn() ? (
+          <Nav.Link href="/" onClick={() => Auth.logout()}><Button className="nav-btn">Logout</Button></Nav.Link>
+        ) : (
+          <Nav.Link href="/login"><Button className="nav-btn">Login</Button></Nav.Link>
+        )}
 
         <Navbar.Brand href="/cart">
           <img
