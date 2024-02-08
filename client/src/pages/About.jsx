@@ -14,7 +14,7 @@ const About = () => {
   return (
     <>
     <Nav/>
-    <Header/>
+    <Header pageName={"About Us"}/>
 
      <main>
         <div className="flex">

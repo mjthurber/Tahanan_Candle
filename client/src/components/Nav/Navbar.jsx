@@ -35,6 +35,7 @@ function Navigation() {
         <Nav.Link href="/about">About</Nav.Link>
         <Nav.Link href="/candles">Shop Candles</Nav.Link>
         <Nav.Link href="/bundles">Shop Bundles</Nav.Link>
+        <Nav.Link href="/contact">Contact</Nav.Link>
         {Auth.loggedIn() ? (
           <Nav.Link href="/" onClick={() => Auth.logout()}><Button className="nav-btn">Logout</Button></Nav.Link>
         ) : (
