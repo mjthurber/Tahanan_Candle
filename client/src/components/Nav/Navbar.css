@@ -1,37 +1,18 @@
-.me-auto{
-    font-family: 'Bodoni Moda', serif;
+.me-auto {
+    font-family: 'Fira Sans', sans-serif;
     font-size: 20px;
-    font-weight: bolder;
-}
-/* 
-.basic-navbar-nav{
-    display: flex;
-    justify-content: space-between;
+    font-weight: 600;
 }
 
-.nav-btn{
-Background-color: black;
-} */
-
-
-.navbar_cart {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.cont{
+    background-color:rgba(255, 255, 255, 0.161);
 }
 
-
-/* .nav-cart-count {
-    height: 22px;
-    width: 22px;
+.r-nav{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -35px;
-    margin-left: -55px;
-    border-radius: 11px;
-    font-size: 14px;
-    background: rgb(209, 15, 15);
-    color: white;
-} */
-
+    align-items:center;
+}
