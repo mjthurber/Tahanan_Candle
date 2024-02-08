@@ -69,6 +69,7 @@ function Navigation() {
           <Nav.Link href="/login"><Button className="nav-btn">Login</Button></Nav.Link>
         )}
 
+
         <Navbar.Brand href="/cart">
           <img
             src={cart_icon}
