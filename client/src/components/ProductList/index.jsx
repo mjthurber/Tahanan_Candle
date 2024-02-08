@@ -1,69 +1,56 @@
-/* import { useEffect } from 'react';
-import ProductItem from '../ProductItem';
-import { useStoreContext } from '../../utils/GlobalState';
-import { UPDATE_PRODUCTS } from '../../utils/actions';
-import { useQuery } from '@apollo/client';
-import { QUERY_PRODUCTS } from '../../utils/queries';
-import { idbPromise } from '../../utils/helpers';
-import spinner from '../../assets/spinner.gif';
+import Col from 'react-bootstrap/Col'
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
+import kalamansi from '../../assets/owner.jpg'
 
-function ProductList() {
-  const [state, dispatch] = useStoreContext();
-
-  const { loading, data } = useQuery(QUERY_PRODUCTS);
-
-  useEffect(() => {
-    if (data) {
-      dispatch({
-        type: UPDATE_PRODUCTS,
-        products: data.products,
-      });
-      data.products.forEach((product) => {
-        idbPromise('products', 'put', product);
-      });
-    } else if (!loading) {
-      idbPromise('products', 'get').then((products) => {
-        dispatch({
-          type: UPDATE_PRODUCTS,
-          products: products,
-        });
-      });
-    }
-  }, [data, loading, dispatch]);
-
-  function filterProducts() {
-    if (!currentCategory) {
-      return state.products;
-    }
-
-    return state.products.filter(
-      (product) => product.category._id === currentCategory
-    );
-  }
-
+function ProductList(prop) {
+  console.log(prop);
+  console.log(prop.data.products);
+  const products = prop.data.products;
   return (
     <div className="my-2">
-      <h2>Our Products:</h2>
-      {state.products.length ? (
-        <div className="flex-row">
-          {filterProducts().map((product) => (
-            <ProductItem
-              key={product._id}
-              _id={product._id}
-              image={product.image}
-              name={product.name}
-              price={product.price}
-              quantity={product.quantity}
-            />
-          ))}
-        </div>
-      ) : (
-        <h3>You haven't added any products yet!</h3>
-      )}
-      {loading ? <img src={spinner} alt="loading" /> : null}
+      {products?.map((item) => (
+        <Col key={item._id}>
+          <Card className="bg-dark text-white">
+            <Card.Img src={item.image} alt="Candle image" />
+            <Card.Body>
+              <Card.Title>{item.name}</Card.Title>
+              <Card.Text>
+                {item.description} 
+              </Card.Text>
+              <Button>View Purchase Options</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        
+      ))}
+                {/* <Col>
+            <Card className="bg-dark text-white">
+              <Card.Img src={kalamansi} alt="Card image" />
+              <Card.Body>
+                <Card.Title>Kalamansi Flower</Card.Title>
+                <Card.Text>
+                  Kalamansi, also known as Calamansi or Philippine Lime, is a citrus fruit native to the Philippines. This fragrance features a refreshing citrusy scent. 
+                </Card.Text>
+                <Button>View Purchase Options</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card className="bg-dark text-white">
+              <Card.Img src={kalamansi} alt="Card image" />
+              <Card.Body>
+                <Card.Title>Kalamansi Flower</Card.Title>
+                <Card.Text>
+                  Kalamansi, also known as Calamansi or Philippine Lime, is a citrus fruit native to the Philippines. This fragrance features a refreshing citrusy scent. 
+                </Card.Text>
+                <Button>View Purchase Options</Button>
+              </Card.Body>
+            </Card>
+          </Col> */}
+
     </div>
   );
 }
 
 export default ProductList;
- */

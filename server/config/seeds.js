@@ -2,10 +2,6 @@ const db = require('./connection');
 const { User, Product, Category } = require('../models');
 const cleanDB = require('./cleanDB');
 
-const ubelicious8ozImg = require('../../client/src/assets/ubelicious.JPEG');
-const ubelicious12ozImg = require('../../client/src/assets/Ubelicious-12oz.JPEG');
-const pandanImg = require ('../../client/src/assets/Pandan.JPEG');
-const kalamansiImg = require('../../client/assets/Kalamansi.JPEG');
 
 
 db.once('open', async () => {
@@ -22,7 +18,7 @@ db.once('open', async () => {
       inspiration: "Ube Delight is inspired by the rich culinary heritage of the Philippines, where ube is a cherished ingredient used in a wide array of sweet treats. This candle captures the essence of Filipino culture and cuisine.",
       intendedExperience: "Lighting the Ube Delight scented candle invites the essence of Filipino tradition and tropical delight into your space. It evokes the comfort of homemade desserts and the warmth of Filipino hospitality. Allow this candle to transport you to a place of sweetness and nostalgia, all within the soothing ambiance of your home.",
       pleaseNote: 'Please note that the Ube Delight scented candle is meticulously crafted with high-quality soy wax and premium fragrance oils to ensure a clean and luxurious burn, allowing you to fully enjoy the unique and delightful scent of ube.',
-      image: ubelicious12ozImg,
+      image: '../../client/src/assets/ubelicious.JPEG',
       size: '12oz',
       price: 40.00,
       quantity: 1,
@@ -35,7 +31,7 @@ db.once('open', async () => {
       inspiration: "Ube Delight is inspired by the rich culinary heritage of the Philippines, where ube is a cherished ingredient used in a wide array of sweet treats. This candle captures the essence of Filipino culture and cuisine.",
       intendedExperience: "Lighting the Ube Delight scented candle invites the essence of Filipino tradition and tropical delight into your space. It evokes the comfort of homemade desserts and the warmth of Filipino hospitality. Allow this candle to transport you to a place of sweetness and nostalgia, all within the soothing ambiance of your home.",
       pleaseNote: 'Please note that the Ube Delight scented candle is meticulously crafted with high-quality soy wax and premium fragrance oils to ensure a clean and luxurious burn, allowing you to fully enjoy the unique and delightful scent of ube.',
-      image: ubelicious8ozImg,
+      image: '../../client/src/assets/Ubelicious-12oz.JPEG',
       size: '8oz',
       price: 25.00,
       quantity: 1,
@@ -48,7 +44,7 @@ db.once('open', async () => {
       inspiration: "Pandan draws inspiration from the lush, tropical landscapes of the Philippines, where Pandan leaves are prized for their unique aroma and versatility. This scented candle captures the essence of the region's culinary treasures and natural beauty.",
       intendedExperience: "Lighting the Pandan scented candle transports you to a tranquil beachside retreat, where the fragrance of Pandan leaves mingles with the sweetness of buko coconut and the warmth of vanilla cream. It embodies the serenity of tropical paradises and the culinary delights of the region. Let this candle evoke the spirit of the Philippines in your home.",
       pleaseNote: 'Please note that the Pandan scented candle is made with high-quality, sustainable soy wax and premium fragrance oils to ensure a clean and luxurious burn, allowing you to enjoy the tropical paradise experience to the fullest.',
-      image: pandanImg,
+      image: '../../client/src/assets/Pandan.JPEG',
       size: '8oz',
       price: 25.00,
       quantity: 1,
@@ -61,7 +57,7 @@ db.once('open', async () => {
       inspiration:"Kalamansi Flower is inspired by the lush citrus groves found in tropical regions, where Kalamansi lemons and citrus blossoms flourish. This scented candle captures the essence of these bountiful groves and the joy of citrus in full bloom.",
       intendedExperience:"Lighting the Kalamansi Flower scented candle is like opening the door to a sun-drenched citrus garden. It's a sensory journey that invigorates the spirit, refreshes the mind, and fills your space with the vibrant energy of citrus in all its glory.",
       pleaseNote: "Please note that the Kalamansi Flower scented candle is handcrafted with premium soy wax and the finest fragrance oils to ensure a clean and luxurious burn, allowing you to fully immerse yourself in the delightful scent of citrus, blossoms, and green leaves.",
-      image: kalamansiImg,
+      image: '../../client/assets/Kalamansi.JPEG',
       size: '8oz',
       price: 25.00,
       quantity: 1,
