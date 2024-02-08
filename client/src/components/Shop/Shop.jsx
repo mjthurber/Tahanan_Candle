@@ -1,4 +1,5 @@
 import React from 'react'
+import './Shop.css'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -10,11 +11,10 @@ import pandan from '../../assets/pandan_8oz-edited.png'
 const Shop = () => {
   return (
     <Container className='mt-5'>
-        <h2> New Releases</h2>
+        <h2>NEW ARRIVALS</h2>
         <p>Our candle fragrances were inspired by the rich aromas of tropical blooms, exotic fruits, and the essence of Filipino culture. Each candle comes in an 8oz. and 12oz. size. Bring a touch of the Philippines into your home today.</p>
         
         <Row>
-          {/*candles.map((candle) => () ) */}
           <Col>
             <Card className="bg-dark text-white">
               <Card.Img src={pandan} alt="Card image" />
