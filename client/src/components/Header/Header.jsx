@@ -1,12 +1,12 @@
 import React from "react";
 import "../Hero/Hero.css";
 
-const Header = () => {
+const Header = ({pageName}) => {
     return (
         <div className="hero">
             <div className="hero-left">
                 <div>
-                    <h1>Page Name</h1>
+                    <h1>{pageName}</h1>
                 </div>
             </div>
         </div>
