@@ -62,7 +62,7 @@ function Navigation() {
         <Nav.Link href="/about">About</Nav.Link>
         <Nav.Link href="/candles">Shop Candles</Nav.Link>
         <Nav.Link href="/bundles">Shop Bundles</Nav.Link>
-        <Nav.Link href="/login"><Button class="nav-btn">Login</Button></Nav.Link>
+        <Nav.Link href="/login"><Button className="nav-btn">Login</Button></Nav.Link>
 
         <Navbar.Brand href="/cart">
           <img
