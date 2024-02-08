@@ -1,5 +1,6 @@
 import React from "react";
 import Header from '../components/Header/Header';
+import Nav from '../components/Nav/Navbar'
 import owner from "../assets/owner.jpg";
 import pandan from "../assets/Pandan_8oz.jpg";
 import ubelicious from "../assets/Ubelicious_8oz.jpg";
@@ -12,6 +13,7 @@ import "./about.css";
 const About = () => {
   return (
     <>
+    <Nav/>
     <Header/>
 
      <main>
