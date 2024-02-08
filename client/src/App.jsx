@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { StoreProvider } from './utils/GlobalState';
 
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });

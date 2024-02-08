@@ -11,7 +11,7 @@ import pandan from '../../assets/pandan_8oz-edited.png'
 const Shop = () => {
   return (
     <Container className='mt-5'>
-        <h2>NEW ARRIVALS</h2>
+        <h2 className="arrivals" >N E W     A R R I V A L S</h2>
         <p>Our candle fragrances were inspired by the rich aromas of tropical blooms, exotic fruits, and the essence of Filipino culture. Each candle comes in an 8oz. and 12oz. size. Bring a touch of the Philippines into your home today.</p>
         
         <Row>
@@ -23,7 +23,7 @@ const Shop = () => {
                 <Card.Text>
                   Kalamansi, also known as Calamansi or Philippine Lime, is a citrus fruit native to the Philippines. This fragrance features a refreshing citrusy scent. 
                 </Card.Text>
-                <Button>View Purchase Options</Button>
+                <Button>View Detials</Button>
               </Card.Body>
             </Card>
           </Col>
@@ -35,7 +35,7 @@ const Shop = () => {
                 <Card.Text>
                   Kalamansi, also known as Calamansi or Philippine Lime, is a citrus fruit native to the Philippines. This fragrance features a refreshing citrusy scent. 
                 </Card.Text>
-                <Button>View Purchase Options</Button>
+                <Button>View Details</Button>
               </Card.Body>
             </Card>
           </Col>
@@ -47,7 +47,7 @@ const Shop = () => {
                 <Card.Text>
                   Kalamansi, also known as Calamansi or Philippine Lime, is a citrus fruit native to the Philippines. This fragrance features a refreshing citrusy scent. 
                 </Card.Text>
-                <Button>View Purchase Options</Button>
+                <Button>View Details</Button>
               </Card.Body>
             </Card>
           </Col>
