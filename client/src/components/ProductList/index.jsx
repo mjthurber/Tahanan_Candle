@@ -1,69 +1,34 @@
-/* import { useEffect } from 'react';
-import ProductItem from '../ProductItem';
-import { useStoreContext } from '../../utils/GlobalState';
-import { UPDATE_PRODUCTS } from '../../utils/actions';
-import { useQuery } from '@apollo/client';
-import { QUERY_PRODUCTS } from '../../utils/queries';
-import { idbPromise } from '../../utils/helpers';
-import spinner from '../../assets/spinner.gif';
+import Col from 'react-bootstrap/Col'
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
+import kalamansi from '../../assets/owner.jpg'
+import Row from 'react-bootstrap/Row'
 
-function ProductList() {
-  const [state, dispatch] = useStoreContext();
-
-  const { loading, data } = useQuery(QUERY_PRODUCTS);
-
-  useEffect(() => {
-    if (data) {
-      dispatch({
-        type: UPDATE_PRODUCTS,
-        products: data.products,
-      });
-      data.products.forEach((product) => {
-        idbPromise('products', 'put', product);
-      });
-    } else if (!loading) {
-      idbPromise('products', 'get').then((products) => {
-        dispatch({
-          type: UPDATE_PRODUCTS,
-          products: products,
-        });
-      });
-    }
-  }, [data, loading, dispatch]);
-
-  function filterProducts() {
-    if (!currentCategory) {
-      return state.products;
-    }
-
-    return state.products.filter(
-      (product) => product.category._id === currentCategory
-    );
-  }
-
+function ProductList(products) {
+  console.log(products)
+  console.log(products.products)
+  
   return (
     <div className="my-2">
-      <h2>Our Products:</h2>
-      {state.products.length ? (
-        <div className="flex-row">
-          {filterProducts().map((product) => (
-            <ProductItem
-              key={product._id}
-              _id={product._id}
-              image={product.image}
-              name={product.name}
-              price={product.price}
-              quantity={product.quantity}
-            />
-          ))}
-        </div>
-      ) : (
-        <h3>You haven't added any products yet!</h3>
-      )}
-      {loading ? <img src={spinner} alt="loading" /> : null}
+      <Row>
+        {products.products.map((item) => (
+          <Col lg={true} key={item._id} className='m-1'>
+            <Card className="bg-dark text-white">
+              <Card.Img src={item.image} alt="Candle image" />
+              <Card.Body>
+                <Card.Title>{item.name}</Card.Title>
+                <Card.Text>
+                  {item.description} 
+                </Card.Text>
+                <Button>View Purchase Options</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+
     </div>
   );
 }
 
 export default ProductList;
- */
