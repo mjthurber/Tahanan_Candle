@@ -12,7 +12,7 @@ import "./about.css";
 const About = () => {
   return (
     <>
-    <Header/>
+    <Header pageName={"About Us"}/>
 
      <main>
         <div className="flex">
