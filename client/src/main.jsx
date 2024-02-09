@@ -11,6 +11,7 @@ import Login from './pages/Login';
 import ShoppingCart from './pages/ShoppingCart';
 import Contact from './pages/Contact';
 import ShopCategory from './pages/ShopCategory';
+import Signup from './pages/Signup.jsx';
 
 
 
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: '/cart',
         element: <ShoppingCart />
+      },
+      {
+        path: '/signup',
+        element: <Signup />
       }
     ]
   }
