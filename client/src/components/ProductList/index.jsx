@@ -9,6 +9,9 @@ const styles = {
   imgStyle:{
     aspectRatio:"1/1",
     objectFit: "cover!important",
+  },
+  cardStyle: {
+    width:"100%"
   }
 }
 
@@ -18,7 +21,7 @@ function ProductList(products) {
       <Row>
         {products.products.map((item) => (
           <Col key={item._id} sm={12} className='my-3 col-lg-6 col-md-6'>
-            <Card className="bg-dark text-white">
+            <Card style={styles.cardStyle} className="bg-dark text-white">
                 <Card.Img src={`/images/${item.image}`} alt="Candle image" style={styles.imgStyle}/>
               <Card.Body>
                 <Card.Title className='my-3'>{item.name}</Card.Title>
