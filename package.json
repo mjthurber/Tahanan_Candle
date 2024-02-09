@@ -17,6 +17,4 @@
   "devDependencies": {
     "concurrently": "^5.1.0"
   }
-
-  //pointless code to update the file
 }
