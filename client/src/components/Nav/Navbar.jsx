@@ -10,6 +10,7 @@ import Cart from '../Cart';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Auth from '../../utils/auth';
 
 
 function Navigation() {
@@ -35,8 +36,12 @@ function Navigation() {
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
           <Nav className='r-nav'>
-          <Nav.Link href="/login">Login</Nav.Link>
-          <Cart />
+            {Auth.loggedIn() ? (
+              <Nav.Link href="/" onClick={() => Auth.logout()}>Logout</Nav.Link>
+            ) : (
+              <Nav.Link href="/login">Login</Nav.Link>
+            )}
+            <Cart />
           </Nav>
         </Navbar.Collapse>
       </Container>

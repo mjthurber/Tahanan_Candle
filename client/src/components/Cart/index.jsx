@@ -70,9 +70,9 @@ const Cart = () => {
   return (
     <div className="cart">
       <div className="close" onClick={toggleCart}>
-        [close]
+        X
       </div>
-      <h2>Shopping Cart</h2>
+      <h2>Your Shopping Cart</h2>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (
