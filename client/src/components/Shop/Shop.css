@@ -1,18 +1,35 @@
+.mt-5{
+  background-color: white;
+}
+
 .arrivals {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: rgb(37, 59, 120);
   font-family: 'Bodoni Moda', serif;
   font-weight: 600;
 }
 
+.new-info {
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
 .mt-5 {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: 'Fira Sans', sans-serif;
+  background-color: rgba(10, 107, 91, 0.24);
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.381);
+}
+
+.col{
+  box-shadow: 5px rgba(0, 0, 0, 0.381);
 }
