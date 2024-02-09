@@ -3,6 +3,8 @@ import Header from '../components/Header/Header';
 import Nav from '../components/Nav/Navbar'
 import Button from 'react-bootstrap/Button';
 import emailjs from '@emailjs/browser';
+import Container from 'react-bootstrap/Container'
+
 import "./contact.css";
 
 
@@ -23,7 +25,9 @@ const Contact = () => {
             <main className="contact-page">
                 <p className="info">Please feel free to contact us about any questions or concerns you may have. You can email us directly at <b>TahananCandle@gmail.com</b> or fill out our contact form below:</p>
 
-                <form className="shadow-sm mb-5 rounded" id="contact-form" onSubmit={sendEmail}>
+                <Container className='mt-5'>
+
+                <form id="contact-form" onSubmit={sendEmail}>
 
                     <div className="col-md-4 mb-3">
                         <label htmlFor="validationDefault01">Your Name</label>
@@ -43,8 +47,9 @@ const Contact = () => {
                         <label htmlFor="validationDefault04">Your Message</label>
                         <textarea type="text-area" className="form-control" id="validationDefault04" placeholder="Your Message" required name="message" />
                     </div>
-                    <Button type="submit">Submit</Button>
+                    <Button variant="light" type="submit">Submit</Button>
                 </form>
+      </Container>
 
             </main>
 

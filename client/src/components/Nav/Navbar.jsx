@@ -4,9 +4,9 @@ import "./Navbar.css";
 
 // Import logo and cart icon from assets folder
 import logo from "../../assets/logo.png";
-import cart_icon from "../../assets/cart_icon5.png";
+import Cart from '../Cart';
 
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -32,19 +32,11 @@ function Navigation() {
             <Nav.Link href="/about">About Us</Nav.Link>
             <Nav.Link href="/candles">Shop Candles</Nav.Link>
             <Nav.Link href="/bundles">Shop Budles</Nav.Link>
-            <Nav.Link href="/cantact">Contact</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
           <Nav className='r-nav'>
           <Nav.Link href="/login">Login</Nav.Link>
-            <Nav.Link eventKey={2} href="#cart">
-            <img
-            src={cart_icon}
-            alt="Logo"
-            width="35"
-            height="35"
-            className="d-inline-block align-text-top"
-          />
-            </Nav.Link>
+          <Cart />
           </Nav>
         </Navbar.Collapse>
       </Container>
