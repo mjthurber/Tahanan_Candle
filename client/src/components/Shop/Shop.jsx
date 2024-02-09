@@ -10,6 +10,9 @@ import kalamansi from "../../assets/kalamansi_Flower_8oz.jpg";
 import pandan from "../../assets/pandan_8oz.jpg";
 import ubelicious from "../../assets/ubelicious_8oz.jpg";
 
+import flower from "../../assets/flower.png";
+import palm from "../../assets/palm.png";
+
 const Shop = () => {
   return (
     <Container className="mt-5">
@@ -21,25 +24,27 @@ const Shop = () => {
           <Card className="bg-dark text-white" style={{ width: "18rem" }}>
             <Card.Img variant="top" src={kalamansi} />
             <Card.Body>
-              <Card.Title>KALAMANSI FLOWER 🌼 </Card.Title>
+              <Card.Title>KALAMANSI FLOWER </Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Scent Profile:
               </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
               <ListGroup.Item className="bg-dark text-white">
-                Cras justo odio
+                <img className='scent_icon' src={flower} alt="flower" />
+                Calamansi
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
-                Dapibus ac facilisis in
+              <img className='scent_icon' src={flower} alt="soy" />
+                Lime Flowers
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
-                Vestibulum at eros
+              <img className='scent_icon' src={flower} alt="100% organic" />
+                Citrus Leaves
               </ListGroup.Item>
             </ListGroup>
             <Card.Body>
-              <Card.Link href="#"></Card.Link>
+              <Card.Link href="#">link</Card.Link>
             </Card.Body>
           </Card>
         </Col>
@@ -48,21 +53,23 @@ const Shop = () => {
           <Card className="bg-dark text-white" style={{ width: "18rem" }}>
             <Card.Img variant="top" src={pandan} />
             <Card.Body>
-              <Card.Title>PANDAN 🥥</Card.Title>
+              <Card.Title>PANDAN</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              Scent Profile:
               </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
               <ListGroup.Item className="bg-dark text-white">
-                Cras justo odio
+              <img className='scent_icon' src={palm} alt="flower" />
+                Fresh Pandan Leaves
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
-                Dapibus ac facilisis in
+              <img className='scent_icon' src={palm} alt="flower" />
+                Coconut
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
-                Vestibulum at eros
+              <img className='scent_icon' src={palm} alt="flower" />
+                Vanilla
               </ListGroup.Item>
             </ListGroup>
             <Card.Body>
@@ -75,21 +82,23 @@ const Shop = () => {
           <Card className="bg-dark text-white" style={{ width: "18rem" }}>
             <Card.Img variant="top" src={ubelicious} />
             <Card.Body>
-              <Card.Title>UBELICIOUS ✨ </Card.Title>
+              <Card.Title>UBELICIOUS</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              Scent Profile:
               </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
               <ListGroup.Item className="bg-dark text-white">
-                Cras justo odio
+              <img className='scent_icon' src={palm} alt="palm tree" />
+                Sweet Nutty
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
-                Dapibus ac facilisis in
+              <img className='scent_icon' src={palm} alt="palm tree" />
+                Vanilla
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
-                Vestibulum at eros
+              <img className='scent_icon' src={palm} alt="palm tree" />
+                Creamy Coconut
               </ListGroup.Item>
             </ListGroup>
             <Card.Body>
