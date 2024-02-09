@@ -1,27 +1,28 @@
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
-import kalamansi from '../../assets/owner.jpg'
+
 import Row from 'react-bootstrap/Row'
 import '../ProductItem/Product.css'
 
+const styles = {
+  imgStyle:{
+    aspectRatio:"1/1",
+    objectFit: "cover!important",
+  }
+}
+
 function ProductList(products) {
-  console.log(products)
-  console.log(products.products)
-  
   return (
     <div className="my-2">
       <Row>
         {products.products.map((item) => (
-          <Col lg={true} key={item._id} className='m-1'>
+          <Col key={item._id} sm={12} className='my-3 col-lg-6 col-md-6'>
             <Card className="bg-dark text-white">
-              <Card.Img src={`/images/${item.image}`} alt="Candle image" />
+                <Card.Img src={`/images/${item.image}`} alt="Candle image" style={styles.imgStyle}/>
               <Card.Body>
-                <Card.Title>{item.name}</Card.Title>
-                <Card.Text>
-                  {item.description} 
-                </Card.Text>
-                <Button>View Purchase Options</Button>
+                <Card.Title className='my-3'>{item.name}</Card.Title>
+                <Button className='my-3'>View Purchase Options</Button>
               </Card.Body>
             </Card>
           </Col>
