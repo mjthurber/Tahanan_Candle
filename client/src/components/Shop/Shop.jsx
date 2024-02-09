@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 
-import kalamansi from "../../assets/kalamansi_Flower_8oz.jpg";
+import kalamansi from "../../assets/Kalamansi_Flower_8oz.jpg";
 import pandan from "../../assets/pandan_8oz.jpg";
 import ubelicious from "../../assets/ubelicious_8oz.jpg";
 
