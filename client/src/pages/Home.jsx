@@ -12,7 +12,6 @@ const Home = () => {
       <Hero/>
       <Shop/>
       <CustomerReviews/>
-
     </div>
   )
 }

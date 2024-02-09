@@ -7,7 +7,9 @@ import CartItem from '../CartItem';
 import Auth from '../../utils/auth';
 import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
+import cart_icon from "../../assets/cart_icon5.png";
 import './style.css';
+
 
 // stripePromise returns a promise with the stripe object as soon as the Stripe package loads
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
@@ -16,8 +18,6 @@ const Cart = () => {
   const [state, dispatch] = useStoreContext();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
-  // We check to see if there is a data object that exists, if so this means that a checkout session was returned from the backend
-  // Then we should redirect to the checkout with a reference to our session id
   useEffect(() => {
     if (data) {
       stripePromise.then((res) => {
@@ -26,8 +26,6 @@ const Cart = () => {
     }
   }, [data]);
 
-  // If the cart's length or if the dispatch function is updated, check to see if the cart is empty.
-  // If so, invoke the getCart method and populate the cart with the existing from the session
   useEffect(() => {
     async function getCart() {
       const cart = await idbPromise('cart', 'get');
@@ -51,8 +49,7 @@ const Cart = () => {
     return sum.toFixed(2);
   }
 
-  // When the submit checkout method is invoked, loop through each item in the cart
-  // Add each item id to the productIds array and then invoke the getCheckout query passing an object containing the id for all our products
+
   function submitCheckout() {
 
     getCheckout({
@@ -65,9 +62,7 @@ const Cart = () => {
   if (!state.cartOpen) {
     return (
       <div className="cart-closed" onClick={toggleCart}>
-        <span role="img" aria-label="trash">
-          🛒
-        </span>
+        <img src={cart_icon} alt="cart"/>
       </div>
     );
   }
@@ -75,9 +70,9 @@ const Cart = () => {
   return (
     <div className="cart">
       <div className="close" onClick={toggleCart}>
-        [close]
+        X
       </div>
-      <h2>Shopping Cart</h2>
+      <h2>Your Shopping Cart</h2>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (
@@ -96,9 +91,6 @@ const Cart = () => {
         </div>
       ) : (
         <h3>
-          <span role="img" aria-label="shocked">
-            😱
-          </span>
           You haven't added anything to your cart yet!
         </h3>
       )}
