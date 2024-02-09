@@ -11,7 +11,7 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Ubelicious',
+      name: 'Ubelicious - 12oz',
       description: "The Essence of Purple Yam Bliss. Indulge your senses with the enchanting aroma of our Ube Delight scented candle. This candle captures the essence of the beloved Filipino purple yam, known as 'ube,' creating an aromatic experience that's as delightful as it is unique.",
       fragranceNotes: "TOP NOTES: Sweet Ube As you light the candle, the sweet and earthy top notes of ube unfurl, immediately immersing you in the delectable world of this beloved Filipino ingredient. MIDDLE NOTES: Creamy Coconut The heart of the fragrance reveals a creamy, coconut undertone. It complements the ube's sweetness, evoking memories of traditional Filipino desserts and tropical indulgence. BASE NOTES: Vanilla Elegance The base notes introduce a touch of vanilla elegance. This velvety richness adds depth to the fragrance, creating a balanced and harmonious aroma.",
       signatureNotes: "Purple Yam Symphony Throughout the candle's burn, a signature note of 'Purple Yam Symphony' weaves these elements together into a melodious and captivating fragrance.",
@@ -24,7 +24,7 @@ db.once('open', async () => {
       quantity: 1,
     },
     {
-      name: 'Ubelicious',
+      name: 'Ubelicious - 8oz',
       description: "The Essence of Purple Yam Bliss. Indulge your senses with the enchanting aroma of our Ube Delight scented candle. This candle captures the essence of the beloved Filipino purple yam, known as 'ube,' creating an aromatic experience that's as delightful as it is unique.",
       fragranceNotes: "TOP NOTES: Sweet Ube As you light the candle, the sweet and earthy top notes of ube unfurl, immediately immersing you in the delectable world of this beloved Filipino ingredient. MIDDLE NOTES: Creamy Coconut The heart of the fragrance reveals a creamy, coconut undertone. It complements the ube's sweetness, evoking memories of traditional Filipino desserts and tropical indulgence. BASE NOTES: Vanilla Elegance The base notes introduce a touch of vanilla elegance. This velvety richness adds depth to the fragrance, creating a balanced and harmonious aroma.",
       signatureNotes: "Purple Yam Symphony Throughout the candle's burn, a signature note of 'Purple Yam Symphony' weaves these elements together into a melodious and captivating fragrance.",
