@@ -13,7 +13,7 @@ import ubelicious from "../../assets/ubelicious_8oz.jpg";
 import citrus from "../../assets/scent-profiles/citrus.png";
 import coconut from "../../assets/scent-profiles/coconut.png";
 import vanilla from "../../assets/scent-profiles/vanilla.png"
-
+//removed capitalization from the file name
 const Shop = () => {
   return (
     <Container className="mt-5">
