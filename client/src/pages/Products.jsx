@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../components/Header/Header'
 import Nav from '../components/Nav/Navbar'
 import Container from 'react-bootstrap/Container'
 
@@ -17,7 +16,6 @@ const Products = () => {
   return (
     <div>
       <Nav/>
-      <Header pageName={"Candles"}/>
       <Container className='mt-5'>
         <h2> Our Candles</h2>
         <p>Our candle fragrances were inspired by the rich aromas of tropical blooms, exotic fruits, and the essence of Filipino culture. Each candle comes in an 8oz. and 12oz. size. Bring a touch of the Philippines into your home today.</p>
