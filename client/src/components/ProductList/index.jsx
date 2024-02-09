@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import kalamansi from '../../assets/owner.jpg'
 import Row from 'react-bootstrap/Row'
+import '../ProductItem/Product.css'
 
 function ProductList(products) {
   console.log(products)
