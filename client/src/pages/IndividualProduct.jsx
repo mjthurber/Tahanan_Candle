@@ -109,7 +109,7 @@ function IndividualProduct() {
           <a href='/candles' className='m-4'>
             <Button className='mx-5 mt-3'>Back to Candles</Button>
           </a>
-          <Container className='mt-5 p-5'>
+          <Container className='mt-5 p-5 mb-5'>
             <Row>
               <Col lg={6} md={12} sm={12}>
                 <img
@@ -133,7 +133,6 @@ function IndividualProduct() {
         </div>
       ) : null}
       {loading ? <div>Loading...</div> : null}
-      <Cart />
     </>
   );
 }

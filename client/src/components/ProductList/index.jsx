@@ -25,7 +25,10 @@ function ProductList(products) {
                 <Card.Img src={`/images/${item.image}`} alt="Candle image" style={styles.imgStyle}/>
               <Card.Body>
                 <Card.Title className='my-3'>{item.name}</Card.Title>
-                <Button className='my-3'>View Purchase Options</Button>
+                <a href={`/products/${item._id}`}>
+                  <Button className='my-3'>View Purchase Options</Button>
+                </a>
+
               </Card.Body>
             </Card>
           </Col>
