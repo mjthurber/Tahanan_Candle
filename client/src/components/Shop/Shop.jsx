@@ -10,8 +10,9 @@ import kalamansi from "../../assets/kalamansi_Flower_8oz.jpg";
 import pandan from "../../assets/pandan_8oz.jpg";
 import ubelicious from "../../assets/ubelicious_8oz.jpg";
 
-import flower from "../../assets/flower.png";
-import palm from "../../assets/palm.png";
+import citrus from "../../assets/scent-profiles/citrus.png";
+import coconut from "../../assets/scent-profiles/coconut.png";
+import vanilla from "../../assets/scent-profiles/vanilla.png"
 
 const Shop = () => {
   return (
@@ -31,15 +32,15 @@ const Shop = () => {
             </Card.Body>
             <ListGroup className="list-group-flush">
               <ListGroup.Item className="bg-dark text-white">
-                <img className='scent_icon' src={flower} alt="flower" />
+                <img className='scent_icon' src={citrus} alt="" />
                 Calamansi
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
-              <img className='scent_icon' src={flower} alt="soy" />
+              <img className='scent_icon' src={citrus} alt="lime" />
                 Lime Flowers
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
-              <img className='scent_icon' src={flower} alt="100% organic" />
+              <img className='scent_icon' src={citrus} alt="" />
                 Citrus Leaves
               </ListGroup.Item>
             </ListGroup>
@@ -60,15 +61,15 @@ const Shop = () => {
             </Card.Body>
             <ListGroup className="list-group-flush">
               <ListGroup.Item className="bg-dark text-white">
-              <img className='scent_icon' src={palm} alt="flower" />
+              <img className='scent_icon' src={coconut} alt="" />
                 Fresh Pandan Leaves
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
-              <img className='scent_icon' src={palm} alt="flower" />
+              <img className='scent_icon' src={coconut} alt="flower" />
                 Coconut
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
-              <img className='scent_icon' src={palm} alt="flower" />
+              <img className='scent_icon' src={coconut} alt="" />
                 Vanilla
               </ListGroup.Item>
             </ListGroup>
@@ -89,15 +90,15 @@ const Shop = () => {
             </Card.Body>
             <ListGroup className="list-group-flush">
               <ListGroup.Item className="bg-dark text-white">
-              <img className='scent_icon' src={palm} alt="palm tree" />
+              <img className='scent_icon' src={vanilla} alt=" " />
                 Sweet Nutty
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
-              <img className='scent_icon' src={palm} alt="palm tree" />
+              <img className='scent_icon' src={vanilla} alt="" />
                 Vanilla
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
-              <img className='scent_icon' src={palm} alt="palm tree" />
+              <img className='scent_icon' src={vanilla} alt=" " />
                 Creamy Coconut
               </ListGroup.Item>
             </ListGroup>
