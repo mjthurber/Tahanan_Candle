@@ -35,8 +35,8 @@ function Login(props) {
   return (
     <div>
       <Nav />
-      <div className='container loginBox flex flex-column'>
-        <Link to="/signup">← Go to Signup</Link>
+      <div className='container loginBox flex flex-column bg-dark text-white'>
+        <Link to="/signup" className='text-white'>← Go to Signup</Link>
 
         <h2>Login</h2>
         <form onSubmit={handleFormSubmit}>
