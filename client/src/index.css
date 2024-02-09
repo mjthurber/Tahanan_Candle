@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* font-family: 'Bodoni Moda', serif; */
 }
+.btn-primary{
+  background-color: #042A2B!important;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
