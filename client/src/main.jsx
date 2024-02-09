@@ -12,7 +12,10 @@ import ShoppingCart from './pages/ShoppingCart';
 import Contact from './pages/Contact';
 import ShopCategory from './pages/ShopCategory';
 import Signup from './pages/Signup.jsx';
+
+import IndividualProduct from './pages/IndividualProduct';
 import OrderHistory from './pages/OrderHistory.jsx';
+
 
 
 
@@ -42,8 +45,8 @@ const router = createBrowserRouter([
         element: <ShopCategory category="bundles" />
       },
       {
-        path: '/products/:productId',
-        element: <Products />
+        path: '/products/:id',
+        element: <IndividualProduct />
       },
       {
         path: '/cart',
