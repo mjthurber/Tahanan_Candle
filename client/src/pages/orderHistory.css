@@ -1,0 +1,15 @@
+.historyImage {
+    width: 300px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.card {
+    width: 350px;
+    text-align: center;
+    margin-top: 40px !important;
+}
+
+.price {
+    margin-bottom: 15px !important;
+}

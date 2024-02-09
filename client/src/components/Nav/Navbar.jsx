@@ -1,35 +1,63 @@
-import React from 'react';
+// import React from "react";
 // Bring in accompanying css file
-import './Navbar.css';
+import "./Navbar.css";
 
 // Import logo and cart icon from assets folder
-import logo from '../../assets/logo.png'
-import cart_icon from '../../assets/cart_icon5.png'
-import { Link } from 'react-router-dom';
+import logo from "../../assets/logo.png";
+import cart_icon from "../../assets/cart_icon5.png";
 
-const Navbar = () => {
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Auth from '../../utils/auth';
 
-// UseState to underline navbar links when clicked
-const [menu, setMenu] = React.useState("home");
 
-    return (
-        <div className ='navbar'>
-            <div className='navbar_logo'>
-                <img src={logo} alt='logo'/>
-            </div>
-            <ul className='navbar_links'>
-                <li onClick={()=>{setMenu("home")}}><Link style={{ textDecoration: 'none' }} to='/'>Home</Link>{menu==="home"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("about")}}><Link style={{ textDecoration: 'none' }} to='/about'>About</Link>{menu==="about"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("candles")}}><Link style={{ textDecoration: 'none' }} to='/candles'>Shop Candles</Link>{menu==="candles"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("bundles")}}><Link style={{ textDecoration: 'none' }} to='/bundles'>Shop Bundles</Link>{menu==="bundles"?<hr/>:<></>}</li>
-                <Link to='/login'><button>Login</button></Link>
-            </ul>
-            <div className='navbar_cart'>
-                <Link style={{ textDecoration: 'none' }} to='/cart'><img src={cart_icon} alt="shopping bag"/></Link>
-                <div className="nav-cart-count">0</div>
-            </div>
-        </div>
-    )
+function Navigation() {
+  return (
+    <Navbar id='cont' collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="/">
+          <img
+            src={logo}
+            alt="Logo"
+            width="200"
+            height="100"
+            className="d-inline-block align-text-top"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/about">About Us</Nav.Link>
+            <Nav.Link href="/candles">Shop Candles</Nav.Link>
+            <Nav.Link href="/bundles">Shop Budles</Nav.Link>
+            <Nav.Link href="/cantact">Contact</Nav.Link>
+          </Nav>
+          <Nav className='r-nav'>
+            {Auth.loggedIn() ? ( 
+              <Nav>
+                <Nav.Link href="/orderHistory">Order History</Nav.Link>
+                <Nav.Link href="/" onClick={() => Auth.logout()}>Logout</Nav.Link>
+              </Nav>
+            ) : (
+            <Nav.Link href="/login">Login</Nav.Link>
+            )}
+            <Nav.Link eventKey={2} href="#cart">
+            <img
+            src={cart_icon}
+            alt="Logo"
+            width="35"
+            height="35"
+            className="d-inline-block align-text-top"
+          />
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
 
-export default Navbar;
+export default Navigation;

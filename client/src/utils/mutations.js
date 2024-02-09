@@ -19,6 +19,11 @@ export const ADD_ORDER = gql`
         _id
         name
         description
+        fragranceNotes
+        signatureNotes
+        inspiration
+        intendedExperience
+        pleaseNote
         price
         quantity
         size

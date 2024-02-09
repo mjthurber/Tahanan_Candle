@@ -7,9 +7,12 @@ import App from './App.jsx';
 import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
-import LoginSignup from './pages/LoginSignup';
+import Login from './pages/Login';
 import ShoppingCart from './pages/ShoppingCart';
+import Contact from './pages/Contact';
 import ShopCategory from './pages/ShopCategory';
+import Signup from './pages/Signup.jsx';
+import OrderHistory from './pages/OrderHistory.jsx';
 
 
 
@@ -23,7 +26,7 @@ const router = createBrowserRouter([
         element: <Home />
       }, {
         path: '/login',
-        element: <LoginSignup />
+        element: <Login />
       }, {
         path: '/about',
         element: <About />
@@ -31,6 +34,10 @@ const router = createBrowserRouter([
         path: '/candles',
         element: <Products />
       }, {
+        path: '/contact',
+        element: <Contact />
+      },
+      {
         path: '/bundles',
         element: <ShopCategory category="bundles" />
       },
@@ -41,6 +48,14 @@ const router = createBrowserRouter([
       {
         path: '/cart',
         element: <ShoppingCart />
+      },
+      {
+        path: '/orderHistory',
+        element: <OrderHistory />
+      },
+      {
+        path: '/signup',
+        element: <Signup />
       }
     ]
   }

@@ -1,18 +1,23 @@
 import { gql } from '@apollo/client';
 
-export const QUERY_PRODUCTS = gql`
-  query getProducts() {
-    products() {
-      _id
-      name
-      description
-      price
-      quantity
-      image
-      size
-    }
-  }
-`;
+// export const QUERY_PRODUCTS = gql`
+//   query getProducts() {
+//     products() {
+//       _id
+//       name
+//       description
+//       fragranceNotes
+//       signatureNotes
+//       inspiration
+//       intendedExperience
+//       pleaseNote
+//       price
+//       quantity
+//       image
+//       size
+//     }
+//   }
+// `;
 
 export const QUERY_CHECKOUT = gql`
   query getCheckout($products: [ProductInput]) {
@@ -23,15 +28,22 @@ export const QUERY_CHECKOUT = gql`
 `;
 
 export const QUERY_ALL_PRODUCTS = gql`
-  {
-    products {
-      _id
-      name
-      description
-      price
-      quantity
-    }
+query getAllProducts {
+  products {
+    _id
+    name
+    description
+    fragranceNotes
+    signatureNotes
+    inspiration
+    intendedExperience
+    pleaseNote
+    image
+    quantity
+    price
+    size
   }
+}
 `;
 
 
@@ -47,9 +59,15 @@ export const QUERY_USER = gql`
           _id
           name
           description
+          fragranceNotes
+          signatureNotes
+          inspiration
+          intendedExperience
+          pleaseNote
           price
           quantity
           image
+          size
         }
       }
     }

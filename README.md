@@ -26,8 +26,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 Steps to run project in VS Code  
 1. ```npm run seed```  
-2. ```npm run build```  
-3. ```npm run start```
+2. ```npm run develop```
 
 ## Features
 - Users can create/login to an account
@@ -43,7 +42,10 @@ The collaborators for this project were:
 [Britt Young](https://github.com/britt-young)  
 [Joshua Higginson](https://github.com/joshhigg)  
 
-[Stripe API](https://stripe.com/?utm_campaign=US_en_Search_Brand_Stripe_EXA-20839462206&utm_medium=cpc&utm_source=google&ad_content=683853401230&utm_term=stripe&utm_matchtype=e&utm_adposition=&utm_device=c&gclid=CjwKCAiAq4KuBhA6EiwArMAw1B2GTnrG-Diq8pq2zqL69774qetU9jgaNNUojmnhZzAUoF8WQdOv-xoC1DgQAvD_BwE)
+Resources used:  
+[Stripe API](https://stripe.com/?utm_campaign=US_en_Search_Brand_Stripe_EXA-20839462206&utm_medium=cpc&utm_source=google&ad_content=683853401230&utm_term=stripe&utm_matchtype=e&utm_adposition=&utm_device=c&gclid=CjwKCAiAq4KuBhA6EiwArMAw1B2GTnrG-Diq8pq2zqL69774qetU9jgaNNUojmnhZzAUoF8WQdOv-xoC1DgQAvD_BwE)  
+[EmailJS](https://www.emailjs.com/)  
+[Bootstrap](https://getbootstrap.com/)
 
 
 ## Badges
