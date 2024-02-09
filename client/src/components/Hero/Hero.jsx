@@ -16,7 +16,7 @@ const Hero = () => {
           </Card.Subtitle>
           
           <p>Learn more about the inspiration behind Tahanan Candle Co.</p>
-          <Card.Link className="arrow" href="#about">
+          <Card.Link className="arrow" href="about">
             <img src={arrow_icon} alt="arrow" />
           </Card.Link>
         </Card.Body>

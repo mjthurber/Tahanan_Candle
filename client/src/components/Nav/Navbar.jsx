@@ -10,6 +10,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Auth from '../../utils/auth';
 
 
 function Navigation() {
@@ -35,7 +36,11 @@ function Navigation() {
             <Nav.Link href="/cantact">Contact</Nav.Link>
           </Nav>
           <Nav className='r-nav'>
+          {Auth.loggedIn() ? (
+          <Nav.Link href="/" onClick={() => Auth.logout()}>Logout</Nav.Link>
+        ) : (
           <Nav.Link href="/login">Login</Nav.Link>
+        )}
             <Nav.Link eventKey={2} href="#cart">
             <img
             src={cart_icon}
