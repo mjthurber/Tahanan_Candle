@@ -33,3 +33,9 @@
 .col{
   box-shadow: 5px rgba(0, 0, 0, 0.381);
 }
+
+.scent_icon{
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+}

@@ -1,6 +1,10 @@
 import React from 'react'
 import './CustomerReviews.css'
-import pitt from '../../assets/pitt.jpg'
+//eventually map over actual user reviews
+import amy from '../../assets/amy-review.jpg'
+import john from '../../assets/john-review.jpg'
+import mike from '../../assets/mike-review.jpg'
+
 
 import {
     MDBCarousel,
@@ -18,15 +22,15 @@ const CustomerReviews = () => {
               <div className="review">
                 <MDBCarouselItem className="active text-center">
                   <img
-                    src={pitt}
+                    src={amy}
                     alt="avatar"
                     className="rounded-circle shadow-1-strong mb-4"
                     style={{ width: "150px" }}
                   />
                   <MDBRow className="d-flex justify-content-center">
                     <MDBCol lg="8">
-                      <h5 className="mb-3">Britt Young</h5>
-                      <p>"Item Ordered Here"</p>
+                      <h5 className="mb-3">Amy Doe</h5>
+                      <p>"8oz. Pandan candle"</p>
                       <p className="text-muted">
                         <MDBIcon fas icon="quote-left" className="pe-2" />
                         Absolutely LOVE the candles I recieved! They smell amazing and the packaging is so cute! I will definitely be ordering more in the future!
@@ -54,7 +58,7 @@ const CustomerReviews = () => {
       
                 <MDBCarouselItem className="text-center">
                   <img
-                    src={pitt}
+                    src={john}
                     alt="avatar"
                     className="rounded-circle shadow-1-strong mb-4"
                     style={{ width: "150px" }}
@@ -62,7 +66,7 @@ const CustomerReviews = () => {
                   <MDBRow className="d-flex justify-content-center">
                     <MDBCol lg="8">
                       <h5 className="mb-3">John Doe</h5>
-                      <p>"Item ordered here"</p>
+                      <p>"8oz. Kalamansi Flower candle"</p>
                       <p className="text-muted">
                         <MDBIcon fas icon="quote-left" className="pe-2" />
                         Jez was so helpful and kind when I reached out to her with questions about my order and the candles are more amazing than I could have imagined.
@@ -90,15 +94,15 @@ const CustomerReviews = () => {
       
                 <MDBCarouselItem className="text-center">
                   <img
-                    src={pitt}
+                    src={mike}
                     alt="avatar"
                     className="rounded-circle shadow-1-strong mb-4"
                     style={{ width: "150px" }}
                   />
                   <MDBRow className="d-flex justify-content-center">
                     <MDBCol lg="8">
-                      <h5 className="mb-3">Anna Deynah</h5>
-                      <p>Web Developer</p>
+                      <h5 className="mb-3">Mike Doe</h5>
+                      <p>12oz. Ubelicious candle</p>
                       <p className="text-muted">
                         <MDBIcon fas icon="quote-left" className="pe-2" />
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus

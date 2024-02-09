@@ -15,7 +15,7 @@ import Auth from '../../utils/auth';
 
 function Navigation() {
   return (
-    <Navbar id='cont' collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="/">
           <img
@@ -32,15 +32,18 @@ function Navigation() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About Us</Nav.Link>
             <Nav.Link href="/candles">Shop Candles</Nav.Link>
-            <Nav.Link href="/bundles">Shop Budles</Nav.Link>
-            <Nav.Link href="/cantact">Contact</Nav.Link>
+            <Nav.Link href="/bundles">Shop Bundles</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
           <Nav className='r-nav'>
-          {Auth.loggedIn() ? (
-          <Nav.Link href="/" onClick={() => Auth.logout()}>Logout</Nav.Link>
-        ) : (
-          <Nav.Link href="/login">Login</Nav.Link>
-        )}
+            {Auth.loggedIn() ? ( 
+              <Nav>
+                <Nav.Link href="/orderHistory">Order History</Nav.Link>
+                <Nav.Link href="/" onClick={() => Auth.logout()}>Logout</Nav.Link>
+              </Nav>
+            ) : (
+            <Nav.Link href="/login">Login</Nav.Link>
+            )}
             <Nav.Link eventKey={2} href="#cart">
             <img
             src={cart_icon}
