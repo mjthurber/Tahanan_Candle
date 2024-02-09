@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
 import Cart from '../components/Cart';
+import Nav from '../components/Nav/Navbar'
 import { useStoreContext } from '../utils/GlobalState';
 import {
   REMOVE_FROM_CART,
@@ -13,6 +14,22 @@ import {
 } from '../utils/actions';
 import { QUERY_ALL_PRODUCTS } from '../utils/queries';
 import { idbPromise } from '../utils/helpers';
+
+import Container from 'react-bootstrap/Container'
+import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
+
+const styles ={
+  imgStyle:{
+    maxWidth:"100%",
+    border:"5px solid #293F14"
+  },
+  price:{
+    fontWeight: "800",
+    fontSize: "24px"
+  }
+}
 
 
 function IndividualProduct() {
@@ -87,32 +104,35 @@ function IndividualProduct() {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="container my-1">
-          <Link to="/">← Back to Products</Link>
+        <div>
+          <Nav/>
+          <a href='/candles' className='m-4'>
+            <Button className='mx-5 mt-3'>Back to Candles</Button>
+          </a>
+          <Container className='mt-5 p-5 mb-5'>
+            <Row>
+              <Col lg={6} md={12} sm={12}>
+                <img
+                  style={styles.imgStyle}
+                  src={`/images/${currentProduct.image}`}
+                  alt={currentProduct.name}
+                />
+              </Col>
+              <Col>
+                <h2>{currentProduct.name}</h2>
+                <p style={styles.price}>Price: ${currentProduct.price}{' '}</p>
 
-          <h2>{currentProduct.name}</h2>
-
-          <p>{currentProduct.description}</p>
-
-          <p>
-            <strong>Price:</strong>${currentProduct.price}{' '}
-            <button onClick={addToCart}>Add to Cart</button>
-            <button
-              disabled={!cart.find((p) => p._id === currentProduct._id)}
-              onClick={removeFromCart}
-            >
-              Remove from Cart
-            </button>
-          </p>
-
-          <img
-            src={`/images/${currentProduct.image}`}
-            alt={currentProduct.name}
-          />
+                <p>{currentProduct.description}</p>
+                <p>{currentProduct.signatureNotes}</p>
+                <p>{currentProduct.inspiration}</p>
+                <p>**{currentProduct.pleaseNote}**</p>
+                <Button className='my-3' onClick={addToCart}>🛒 Add to Cart</Button>
+              </Col>            
+            </Row>
+          </Container>
         </div>
       ) : null}
       {loading ? <div>Loading...</div> : null}
-      <Cart />
     </>
   );
 }
