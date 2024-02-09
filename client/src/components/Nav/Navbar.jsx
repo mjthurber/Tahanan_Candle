@@ -31,8 +31,8 @@ function Navigation() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About Us</Nav.Link>
             <Nav.Link href="/candles">Shop Candles</Nav.Link>
-            <Nav.Link href="/bundles">Shop Budles</Nav.Link>
-            <Nav.Link href="/cantact">Contact</Nav.Link>
+            <Nav.Link href="/bundles">Shop Bundles</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
           <Nav className='r-nav'>
           <Nav.Link href="/login">Login</Nav.Link>
