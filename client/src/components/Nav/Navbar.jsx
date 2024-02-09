@@ -15,7 +15,7 @@ import Auth from '../../utils/auth';
 
 function Navigation() {
   return (
-    <Navbar id='cont' collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="/">
           <img
@@ -32,8 +32,8 @@ function Navigation() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About Us</Nav.Link>
             <Nav.Link href="/candles">Shop Candles</Nav.Link>
-            <Nav.Link href="/bundles">Shop Budles</Nav.Link>
-            <Nav.Link href="/cantact">Contact</Nav.Link>
+            <Nav.Link href="/bundles">Shop Bundles</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
           <Nav className='r-nav'>
             {Auth.loggedIn() ? ( 
