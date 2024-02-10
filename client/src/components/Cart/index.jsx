@@ -72,7 +72,7 @@ const Cart = () => {
       <div className="close" onClick={toggleCart}>
         X
       </div>
-      <h2>Your Shopping Cart</h2>
+      <h2>Your Cart</h2>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (
@@ -80,7 +80,7 @@ const Cart = () => {
           ))}
 
           <div className="flex-row space-between">
-            <strong>Total: ${calculateTotal()}</strong>
+            <strong style={{padding: "2%"}}>Total: ${calculateTotal()}</strong>
 
             {Auth.loggedIn() ? (
               <button onClick={submitCheckout}>Checkout</button>

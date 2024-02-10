@@ -1,5 +1,5 @@
 import React from "react";
-import Header from '../components/Header/Header';
+// import Header from '../components/Header/Header';
 import owner from "../assets/owner.jpg";
 import pandan from "../assets/Pandan_8oz.jpg";
 import ubelicious from "../assets/Ubelicious_8oz.jpg";
@@ -14,7 +14,7 @@ const About = () => {
   return (
     <>
     <Nav/>
-    <Header pageName={"About Us"}/>
+    {/* <Header pageName={"About Us"}/> */}
 
      <main>
         <div className="flex">

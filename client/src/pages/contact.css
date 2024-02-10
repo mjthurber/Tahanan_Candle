@@ -42,5 +42,6 @@ main {
     text-align: center;
     /* background-color: rgba(31,67,155,255); */
     border: none;
-    background-color: white !important;
+    color: white;
+    background-color: #293F14!important
 }

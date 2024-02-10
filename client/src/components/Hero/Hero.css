@@ -4,6 +4,7 @@
     background-image: linear-gradient(rgba(253, 253, 253, 0.099), rgba(50, 50, 50, 0.162)),url("../../assets/hero-background.jpg");
     background-position: center;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .hero-card {
@@ -16,6 +17,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: none;
+    width: 100%;
+    min-width: 60%;
 }
 
 .title{
