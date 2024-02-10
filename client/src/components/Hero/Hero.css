@@ -19,7 +19,9 @@
     justify-content: center;
     max-width: none;
     width: 100%;
-    min-width: 60%;
+    min-width: 40%;
+    max-width: 700px;
+    margin: auto;
 }
 
 .title{
@@ -36,5 +38,6 @@
     width: 50px;
     display: flex;
     justify-content: center;
+    margin: auto;
 
 }

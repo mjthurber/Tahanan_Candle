@@ -10,7 +10,7 @@ import Products from './pages/Products';
 import Login from './pages/Login';
 import ShoppingCart from './pages/ShoppingCart';
 import Contact from './pages/Contact';
-import ShopCategory from './pages/ShopCategory';
+import ShopBundle from './pages/ShopBundle';
 import Signup from './pages/Signup.jsx';
 
 import IndividualProduct from './pages/IndividualProduct';
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/bundles',
-        element: <ShopCategory category="bundles" />
+        element: <ShopBundle category="bundles" />
       },
       {
         path: '/products/:id',

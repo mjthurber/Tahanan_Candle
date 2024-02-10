@@ -35,7 +35,7 @@ function Navigation() {
             <Nav.Link href="/" className={currentPage === '/' ? 'nav-link-active' : 'nav-link'}>Home</Nav.Link>
             <Nav.Link href="/about" className={currentPage === '/about' ? 'nav-link-active' : 'nav-link'}>About Us</Nav.Link>
             <Nav.Link href="/candles" className={currentPage === '/candles' ? 'nav-link-active' : 'nav-link'}>Shop Candles</Nav.Link>
-            <Nav.Link href="/bundles" className={currentPage === '/bundles' ? 'nav-link-active' : 'nav-link'}>Shop Budles</Nav.Link>
+            <Nav.Link href="/bundles" className={currentPage === '/bundles' ? 'nav-link-active' : 'nav-link'}>Shop Bundles</Nav.Link>
             <Nav.Link href="/contact" className={currentPage === '/contact' ? 'nav-link-active' : 'nav-link'}>Contact</Nav.Link>
           </Nav>
           <Nav className='r-nav'>
