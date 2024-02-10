@@ -6,13 +6,13 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 
-import kalamansi from "../../assets/Kalamansi_Flower_8oz.jpg";
-import pandan from "../../assets/Pandan_8oz.jpg";
-import ubelicious from "../../assets/Ubelicious_8oz.jpg";
+import kalamansi from "../../../public/images/Kalamansi_Flower_8oz.jpg";
+import pandan from "../../../public/images/Pandan_8oz.jpg";
+import ubelicious from "../../../public/images/Ubelicious_8oz.jpg";
 
-import citrus from "../../assets/scent-profiles/citrus.png";
-import coconut from "../../assets/scent-profiles/coconut.png";
-import vanilla from "../../assets/scent-profiles/vanilla.png"
+import citrus from "../../../public/images/scent-profiles/citrus.png";
+import coconut from "../../../public/images/scent-profiles/coconut.png";
+import vanilla from "../../../public/images/scent-profiles/vanilla.png"
 //removed capitalization from the file name
 const Shop = () => {
   return (
