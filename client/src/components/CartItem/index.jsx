@@ -1,6 +1,8 @@
 import { useStoreContext } from "../../utils/GlobalState";
 import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import trash from "../../assets/trash.svg";
+import './style.css';
 
 const CartItem = ({ item }) => {
 
@@ -36,14 +38,14 @@ const CartItem = ({ item }) => {
   }
 
   return (
-    <div className="flex-row">
-      <div>
+    <div className="cart-item flex-row">
+      <div className="product-info" id="product-options">
         <img
           src={`/images/${item.image}`}
-          alt=""
+          alt={`${item.name}`}
         />
       </div>
-      <div>
+      <div className="product-info">
         <div>{item.name}, ${item.price}</div>
         <div>
           <span>Qty:</span>
@@ -53,13 +55,7 @@ const CartItem = ({ item }) => {
             value={item.purchaseQuantity}
             onChange={onChange}
           />
-          <span
-            role="img"
-            aria-label="trash"
-            onClick={() => removeFromCart(item)}
-          >
-            🗑️
-          </span>
+            <img className="trash" src={trash} alt="delete cart item" onClick={() => removeFromCart(item)}/>
         </div>
       </div>
     </div>

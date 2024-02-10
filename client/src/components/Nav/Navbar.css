@@ -11,3 +11,9 @@
     display: flex;
     align-items:center;
 }
+
+.nav-link-active {
+    text-decoration: underline;
+    text-decoration-color: #293F14;
+    text-underline-offset: 5px;
+}

@@ -1,10 +1,11 @@
 .cart {
   position: fixed;
+  z-index: 1;
   top: 0;
   right: 0;
-  min-width: 20%;
+  min-width: 40%;
   max-width: 40%;
-  max-height: 50%;
+  max-height: 60%;
   background-color: #FDF1BF;
   overflow: auto;
   padding: 1%;
@@ -28,7 +29,7 @@
 }
 
 .cart .close:hover {
-  text-decoration: underline;
+  transform: rotate(10deg);
 }
 
 .cart h3 {
@@ -57,8 +58,10 @@
 }
 
 .cart img {
-  width: 70px;
+  height: 50px;
+  width: auto;
   margin-right: 1rem;
+
 }
 
 .cart input {
@@ -67,12 +70,24 @@
   margin: 0 .5rem 1rem 0;
 }
 
+.cart button {
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
 @media screen and (max-width: 768px) {
   .cart {
     position: relative;
-    max-width: 100%;
+    max-width: none;
+    width: 100%;
+    padding: 2%;
     max-height: auto;
     box-shadow: none;
     background-color: inherit;
+    border-top: 1px solid #293F14;
+
   }
 }
