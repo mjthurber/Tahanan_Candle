@@ -45,7 +45,7 @@ const ShopBundle = () => {
                         </div>
 
                         <div className="col-md-4 mb-3">
-                            <label htmlFor="validationDefault05">Your Message</label>
+                            <label htmlFor="validationDefault05">Your Message/Order Details</label>
                             <textarea type="text-area" className="form-control" id="validationDefault05" placeholder="Your Message" required name="message" />
                         </div>
 
