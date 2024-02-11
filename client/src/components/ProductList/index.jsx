@@ -11,7 +11,9 @@ const styles = {
     objectFit: "cover!important",
   },
   cardStyle: {
-    width:"100%"
+    width:"100%",
+    maxWidth: "400px",
+    margin: "auto"
   }
 }
 
