@@ -1,8 +1,9 @@
 # Tahanan Candle Company
 
 ## Description
-This website is for a small, Filipina-owned candle company based in SLC, Utah. We created this project to help the client sell their uniquely scented candles inspired from Philippines scents and culture.
-
+This website is for a small, Filipina-owned candle company based in SLC, Utah. We created this project to help the client sell their uniquely scented candles inspired from Philippines scents and culture.  
+Check out the deployed website here: [Tahanan Candle Co.](https://tcc-v10.onrender.com/)  
+![project screenshots]()  
 
 ## Table of Contents
 If your README is long, add a table of contents to make it easy for users to find what they need.
@@ -13,16 +14,12 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Credits](#credits)
 
 ## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.  
 ```npm install```
 
 ## Usage
-
 Provide instructions and examples for use. Include screenshots as needed. 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:  
-![project screenshots]()  
-![project screenshots]()  
+To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:   
 
 Steps to run project in VS Code  
 1. ```npm run seed```  
@@ -43,6 +40,9 @@ The collaborators for this project were:
 [Joshua Higginson](https://github.com/joshhigg)  
 
 Resources used:  
+[Vite](https://vitejs.dev/)  
+[React](https://react.dev/)  
+[MongoDB](https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_retarget-brand_gic-null_amers-us-ca_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=14291004479&adgroup=128837427347&cq_cmp=14291004479&gad_source=1&gclid=CjwKCAiA2pyuBhBKEiwApLaIO0HgUGyKWTUCayi8S-rPK1kT-YgZnI8Qeyho2lEpH_lRDzd1RhmP5RoCtUgQAvD_BwE)  
 [Stripe API](https://stripe.com/?utm_campaign=US_en_Search_Brand_Stripe_EXA-20839462206&utm_medium=cpc&utm_source=google&ad_content=683853401230&utm_term=stripe&utm_matchtype=e&utm_adposition=&utm_device=c&gclid=CjwKCAiAq4KuBhA6EiwArMAw1B2GTnrG-Diq8pq2zqL69774qetU9jgaNNUojmnhZzAUoF8WQdOv-xoC1DgQAvD_BwE)  
 [EmailJS](https://www.emailjs.com/)  
 [Bootstrap](https://getbootstrap.com/)
