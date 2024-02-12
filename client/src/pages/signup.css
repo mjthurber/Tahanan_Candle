@@ -1,0 +1,6 @@
+.signup-divs label, .signup-divs input  {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
