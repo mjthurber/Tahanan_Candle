@@ -17,11 +17,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: none;
-    width: 100%;
-    min-width: 40%;
-    max-width: 700px;
-    margin: auto;
 }
 
 .title{
@@ -40,4 +35,12 @@
     justify-content: center;
     margin: auto;
 
+}
+
+#hero-card-styling {
+    margin-top: 0;
+    margin: auto !important;
+    justify-content: center;
+    width: 96%;
+    max-width: 450px;
 }
