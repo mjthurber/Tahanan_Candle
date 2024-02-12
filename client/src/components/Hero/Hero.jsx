@@ -8,7 +8,7 @@ import Card from "react-bootstrap/Card";
 const Hero = () => {
   return (
     <div className="hero">
-      <Card className="hero-card" style={{ width: '18rem' }}>
+      <Card className="hero-card" id="hero-card-styling">
         <Card.Body>
           <Card.Title className="title" >Magandang Araw, Good Day!</Card.Title>
           <Card.Subtitle className="mb-2">

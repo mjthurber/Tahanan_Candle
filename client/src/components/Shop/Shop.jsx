@@ -23,7 +23,7 @@ const Shop = () => {
       <Row>
         <Col>
           <Card className="bg-dark text-white" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={kalamansi} />
+            <Card.Img variant="top" className="home-product" src={kalamansi} />
             <Card.Body>
               <Card.Title>KALAMANSI FLOWER </Card.Title>
               <Card.Text>
@@ -32,7 +32,7 @@ const Shop = () => {
             </Card.Body>
             <ListGroup className="list-group-flush">
               <ListGroup.Item className="bg-dark text-white">
-                <img className='scent_icon' src={citrus} alt="" />
+                <img className='scent_icon' src={citrus} alt="Calamansi" />
                 Calamansi
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
@@ -40,19 +40,19 @@ const Shop = () => {
                 Lime Flowers
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
-              <img className='scent_icon' src={citrus} alt="" />
+              <img className='scent_icon' src={citrus} alt="Citrus Leaves" />
                 Citrus Leaves
               </ListGroup.Item>
             </ListGroup>
             <Card.Body>
-              <Card.Link href="#">link</Card.Link>
+              <Card.Link href={`/products/65ca8f3671882181b624b4fa`}>See Details</Card.Link>
             </Card.Body>
           </Card>
         </Col>
 
         <Col>
           <Card className="bg-dark text-white" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={pandan} />
+            <Card.Img variant="top" className="home-product" src={pandan} />
             <Card.Body>
               <Card.Title>PANDAN</Card.Title>
               <Card.Text>
@@ -61,7 +61,7 @@ const Shop = () => {
             </Card.Body>
             <ListGroup className="list-group-flush">
               <ListGroup.Item className="bg-dark text-white">
-              <img className='scent_icon' src={coconut} alt="" />
+              <img className='scent_icon' src={coconut} alt="pandan leaves" />
                 Fresh Pandan Leaves
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
@@ -69,19 +69,19 @@ const Shop = () => {
                 Coconut
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
-              <img className='scent_icon' src={coconut} alt="" />
+              <img className='scent_icon' src={coconut} alt="vanilla" />
                 Vanilla
               </ListGroup.Item>
             </ListGroup>
             <Card.Body>
-              <Card.Link href="#">See Details</Card.Link>
+              <Card.Link href={`/products/65ca8f3671882181b624b4f9`}>See Details</Card.Link>
             </Card.Body>
           </Card>
         </Col>
 
         <Col>
           <Card className="bg-dark text-white" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={ubelicious} />
+            <Card.Img variant="top" className="home-product" src={ubelicious} />
             <Card.Body>
               <Card.Title>UBELICIOUS</Card.Title>
               <Card.Text>
@@ -90,20 +90,20 @@ const Shop = () => {
             </Card.Body>
             <ListGroup className="list-group-flush">
               <ListGroup.Item className="bg-dark text-white">
-              <img className='scent_icon' src={vanilla} alt=" " />
+              <img className='scent_icon' src={vanilla} alt="sweet nutty" />
                 Sweet Nutty
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
-              <img className='scent_icon' src={vanilla} alt="" />
+              <img className='scent_icon' src={vanilla} alt="vanilla" />
                 Vanilla
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white">
-              <img className='scent_icon' src={vanilla} alt=" " />
+              <img className='scent_icon' src={vanilla} alt="creamy coconut" />
                 Creamy Coconut
               </ListGroup.Item>
             </ListGroup>
             <Card.Body>
-              <Card.Link href="#">See Details</Card.Link>
+              <Card.Link href={`/products/65ca8f3671882181b624b4f8`}>See Details</Card.Link>
             </Card.Body>
           </Card>
         </Col>
