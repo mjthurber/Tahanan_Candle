@@ -7,6 +7,8 @@ import { idbPromise } from "../../utils/helpers";
 function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
 
+  console.log('add to cart productItem index.jsx', state);
+
   const {
     image,
     name,
@@ -18,6 +20,10 @@ function ProductItem(item) {
   const { cart } = state
 
   const addToCart = () => {
+
+    //fix
+    console.log('click');
+
     const itemInCart = cart.find((cartItem) => cartItem._id === _id)
     if (itemInCart) {
       dispatch({
@@ -34,6 +40,10 @@ function ProductItem(item) {
         type: ADD_TO_CART,
         product: { ...item, purchaseQuantity: 1 }
       });
+
+      //fix
+      console.log({...item});
+
       idbPromise('cart', 'put', { ...item, purchaseQuantity: 1 });
     }
   }

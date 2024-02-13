@@ -16,6 +16,8 @@ const stripePromise = loadStripe('pk_test_51OgyJGJSv89w4eKZqvrWn510xufvVIMZlJaRM
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
+
+  // console.log('cart index jsx', state);
   // const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
   const [getCheckout, { loading, data }] = useLazyQuery(QUERY_CHECKOUT, {
@@ -33,8 +35,6 @@ const Cart = () => {
       console.log(data)
     }
   }, [loading, data]);
-
-
 
   useEffect(() => {
     if (data) {
