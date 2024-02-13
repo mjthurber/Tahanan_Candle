@@ -13,6 +13,9 @@ import Contact from './pages/Contact';
 import ShopBundle from './pages/ShopBundle';
 import Signup from './pages/Signup.jsx';
 import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
+import Returns from './pages/Returns';
+
 
 
 import IndividualProduct from './pages/IndividualProduct';
