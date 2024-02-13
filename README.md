@@ -48,7 +48,7 @@ The collaborators for this project were:
 [Britt Young](https://github.com/britt-young)  
 [Joshua Higginson](https://github.com/joshhigg)  
 
-Resources used:  
+Resources/Technologies used:  
 [Vite](https://vitejs.dev/)  
 [React](https://react.dev/)  
 [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_retarget-brand_gic-null_amers-us-ca_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=14291004479&adgroup=128837427347&cq_cmp=14291004479&gad_source=1&gclid=CjwKCAiA2pyuBhBKEiwApLaIO0HgUGyKWTUCayi8S-rPK1kT-YgZnI8Qeyho2lEpH_lRDzd1RhmP5RoCtUgQAvD_BwE)  
