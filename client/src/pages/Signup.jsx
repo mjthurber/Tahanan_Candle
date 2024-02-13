@@ -41,11 +41,29 @@ function Signup(props) {
             Auth.login(token);
 
             // Show success notification
-            toast.success('Signup successful!');
+            toast('Signup successful!', {
+                position: "top-right",
+autoClose: 5000,
+hideProgressBar: false,
+closeOnClick: true,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
+              });
         } catch (error) {
             console.error('Error signing up:', error);
             // Handle error signing up, maybe show an error notification
-            toast.error('Error signing up');
+            toast('Error signing up', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+              });
         }
     };
 
@@ -153,7 +171,6 @@ function Signup(props) {
                                         <MDBBtn
                                             className="mb-4"
                                             size="lg"
-                                            onSubmit={handleFormSubmit}
                                         >
                                             Register
                                         </MDBBtn>
