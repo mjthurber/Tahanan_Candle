@@ -6,7 +6,7 @@ const Returns = () => {
     return(
         <div>
             <Nav/>
-            <Container>
+            <Container className='mt-3'>
                 <h2>Tahanan Candle Co. Return Policy</h2>
                 <p>At Tahanan Candle Co., we take pride in crafting high-quality scented candles that bring joy to your life. Your satisfaction is our top priority, and we stand by the quality of our products. Due to the nature of our products, used candles cannot be returned or refunded. However, for defective or damaged products, please contact us at TahananCandle@gmail.com to arrange a refund or exchange. </p>
                 <p>You can always contact us for any question at TahananCandle@gmail.com</p>

@@ -6,7 +6,7 @@ const Terms = () => {
     return(
         <div>
             <Nav/>
-            <Container>
+            <Container className='mt-3'>
                 <h2>Tahanan Candle Co. Terms of Service</h2>
                 <h3>OVERVIEW</h3>
                 <p>This website is operated by My Store. Throughout the site, the terms “we”, “us” and “our” refer to My Store. My Store offers this website, including all information, tools and Services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.</p>
