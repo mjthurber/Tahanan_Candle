@@ -57,10 +57,6 @@ const resolvers = {
     },
     checkout: async (parent, args, context) => {
       const url = new URL(context.headers.referer).origin;
-
-console.log(url)
-
-
       await Order.create({ products: args.products.map(({ _id }) => _id) });
       // eslint-disable-next-line camelcase
       const line_items = [];
