@@ -4,8 +4,13 @@ import { reducer } from './reducers'
 const StoreContext = createContext();
 const { Provider } = StoreContext;
 
+export function useProductReducer(initialState) {
+  return useReducer(reducer, initialState)
+} //fix
+
 const StoreProvider = ({ value = [], ...props }) => {
-  const [state, dispatch] = useReducer(reducer, {
+  const [state, dispatch] = useProductReducer({
+  // const [state, dispatch] = useReducer(reducer, { ///fix
     products: [],
     cart: [],
     cartOpen: false,

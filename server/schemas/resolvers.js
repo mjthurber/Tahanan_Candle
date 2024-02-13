@@ -1,7 +1,8 @@
 const { User, Product, Order } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 // const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
-const stripe = require('stripe')('pk_test_51OgyJGJSv89w4eKZqvrWn510xufvVIMZlJaRMQGq51tuCXAGdk4w9z6WAx3lF1KNea7AnkTbdMaC4FCQuFcMoihl00WeeJLyrO');
+//fix
+const stripe = require('stripe')('sk_test_51OgyJGJSv89w4eKZ6UM0CBlowqoxZ8j2IHnz2dUqZcNVH7JtnDSkVVv6griCrDBKV6p11uFBQvXS7CykogQC2EwO004S2Fy1Tm');
 
 const resolvers = {
   Query: {
