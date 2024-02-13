@@ -16,6 +16,8 @@ import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import Returns from './pages/Returns';
 import Shipping from './pages/Shipping';
+import Success from './pages/success';
+
 
 
 
@@ -82,6 +84,10 @@ const router = createBrowserRouter([
         path: '/returns',
         element: <Returns />
       },
+      {
+        path: '/success',
+        element: <Success />
+      }
     ]
   }
 ]);
