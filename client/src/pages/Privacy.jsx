@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from '../components/Nav/Navbar';
 import Container from 'react-bootstrap/Container';
+import Footer from '../components/Footer/Footer';
 
 const Privacy = () => {
     return(
@@ -195,6 +196,7 @@ const Privacy = () => {
                 <h5>Contact</h5>
                 <p>Should you have any questions about our privacy practices or this Privacy Policy, or if you would like to exercise any of the rights available to you, please email us at TahananCandle@gmail.com. We will respond to your request within 30 days.</p>
             </Container>
+            <Footer/>
         </div>
     )
 }

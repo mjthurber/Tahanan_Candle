@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container'
 import { useQuery } from '@apollo/client'
 import { QUERY_ALL_PRODUCTS } from '../utils/queries'
 import ProductList from '../components/ProductList'
+import Footer from '../components/Footer/Footer'
 
 
 
@@ -21,6 +22,7 @@ const Products = () => {
         <p>Our candle fragrances were inspired by the rich aromas of tropical blooms, exotic fruits, and the essence of Filipino culture. Each candle comes in an 8oz. and 12oz. size. Bring a touch of the Philippines into your home today.</p>
         {loading ? <div>Loading...</div> : <ProductList products={products} />}
       </Container>
+      <Footer/>
     </div>
   )
 }

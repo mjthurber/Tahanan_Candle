@@ -3,6 +3,7 @@ import Nav from '../components/Nav/Navbar'
 import Button from 'react-bootstrap/Button';
 import emailjs from '@emailjs/browser';
 import Container from 'react-bootstrap/Container'
+import Footer from "../components/Footer/Footer";
 
 import "./bundles.css";
 
@@ -75,7 +76,7 @@ const ShopBundle = () => {
                 </Container>
 
             </main>
-
+            <Footer/>
         </>
 
     );
