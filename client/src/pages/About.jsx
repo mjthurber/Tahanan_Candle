@@ -4,6 +4,7 @@ import owner from "../assets/owner.jpg";
 import pandan from "../assets/Pandan_8oz.jpg";
 import ubelicious from "../assets/Ubelicious_8oz.jpg";
 import Nav from '../components/Nav/Navbar';
+import Footer from "../components/Footer/Footer";
 
 import "./about.css";
 <style>
@@ -106,6 +107,7 @@ const About = () => {
         </p>
         <p>Sincerely, The Tahanan Candle Co. Owner, Jez</p>
     </main>
+    <Footer/>
     </>
    
   );

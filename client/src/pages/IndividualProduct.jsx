@@ -18,7 +18,9 @@ import { idbPromise } from '../utils/helpers';
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col'
+import Col from 'react-bootstrap/Col';
+import Footer from "../components/Footer/Footer";
+
 
 const styles ={
   imgStyle:{
@@ -130,6 +132,7 @@ function IndividualProduct() {
               </Col>            
             </Row>
           </Container>
+          <Footer/>
         </div>
       ) : null}
       {loading ? <div>Loading...</div> : null}

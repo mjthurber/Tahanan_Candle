@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from '../components/Nav/Navbar';
 import Container from 'react-bootstrap/Container';
+import Footer from '../components/Footer/Footer';
 
 const Terms = () => {
     return(
@@ -127,6 +128,7 @@ const Terms = () => {
                     Questions about the Terms of Service should be sent to us at TahananCandle@gmail.com
                 </p>
             </Container>
+            <Footer/>
         </div>
     )
 }
