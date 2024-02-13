@@ -12,11 +12,29 @@ import './style.css';
 
 
 // stripePromise returns a promise with the stripe object as soon as the Stripe package loads
-const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+const stripePromise = loadStripe('pk_test_51OgyJGJSv89w4eKZqvrWn510xufvVIMZlJaRMQGq51tuCXAGdk4w9z6WAx3lF1KNea7AnkTbdMaC4FCQuFcMoihl00WeeJLyrO');
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
-  const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
+  // const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
+
+  const [getCheckout, { loading, data }] = useLazyQuery(QUERY_CHECKOUT, {
+    onCompleted: (data) => {
+      console.log('data:', data)
+    },
+  })
+
+  useEffect(() => {
+    if (loading) {
+      console.log("loading")
+    }
+    else {
+      console.log("not loading")
+      console.log(data)
+    }
+  }, [loading, data]);
+
+
 
   useEffect(() => {
     if (data) {
@@ -51,6 +69,8 @@ const Cart = () => {
 
 
   function submitCheckout() {
+    console.log("submitCheckout")
+    console.log(state.cart)
 
     getCheckout({
       variables: { 

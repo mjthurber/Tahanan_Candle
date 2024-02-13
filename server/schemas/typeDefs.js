@@ -40,12 +40,18 @@ const typeDefs = `
 
   input ProductInput {
     _id: ID
-    purchaseQuantity: Int
     name: String
+    description: String
+    fragranceNotes: String
+    signatureNotes: String
+    inspiration: String
+    intendedExperience: String
+    pleaseNote: String
     image: String
-    price: Float
     quantity: Int
+    price: Float
     size: String
+    purchaseQuantity: Int
   }
 
   type Query {
