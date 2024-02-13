@@ -27,7 +27,7 @@ const Footer = () => {
                     Tahanan Candle Company
                   </h6>
                   <p>
-                    Est. 2021
+                    Est. 2023
                   </p>
                 </MDBCol>
     

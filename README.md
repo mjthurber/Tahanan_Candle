@@ -2,8 +2,9 @@
 
 ## Description
 This website is for a small, Filipina-owned candle company based in SLC, Utah. We created this project to help the client sell their uniquely scented candles inspired from Philippines scents and culture.  
-Check out the deployed website here: [Tahanan Candle Co.](https://tcc-v10.onrender.com/)  
-![project screenshots]()  
+
+Check out the deployed website here: [Tahanan Candle Co.](https://tahanancandleco.onrender.com/)  
+![project screenshot](./project-screenshot.png)  
 
 ## Table of Contents
 If your README is long, add a table of contents to make it easy for users to find what they need.
@@ -14,21 +15,29 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Credits](#credits)
 
 ## Installation
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.  
-```npm install```
+What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running. 
+1. ```npm install```
+2. Create a free EmailJS account (optional)
 
 ## Usage
 Provide instructions and examples for use. Include screenshots as needed. 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:   
-
 Steps to run project in VS Code  
-1. ```npm run seed```  
-2. ```npm run develop```
+1. Create a .env file in the client folder containing your EmailJs variables: (optional: for forms to work)  
+```
+VITE_SERVICE_ID=yourID
+VITE_TEMPLATE_ID=yourTemplateId
+VITE_BULK_TEMPLATE_ID=yourTemplateId
+VITE_PUBLIC_KEY=yourPublicKey
+```
+2. ```npm run seed```  
+3. ```npm run develop```
 
 ## Features
 - Users can create/login to an account
 - View list of items available for purchase
 - Add items to cart and checkout
+- Fill out and send a contact form with EmailJS
+![project screenshot](./project-cart-screenshot.png)  
 
 
 ## Credits
@@ -39,7 +48,7 @@ The collaborators for this project were:
 [Britt Young](https://github.com/britt-young)  
 [Joshua Higginson](https://github.com/joshhigg)  
 
-Resources used:  
+Resources/Technologies used:  
 [Vite](https://vitejs.dev/)  
 [React](https://react.dev/)  
 [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_retarget-brand_gic-null_amers-us-ca_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=14291004479&adgroup=128837427347&cq_cmp=14291004479&gad_source=1&gclid=CjwKCAiA2pyuBhBKEiwApLaIO0HgUGyKWTUCayi8S-rPK1kT-YgZnI8Qeyho2lEpH_lRDzd1RhmP5RoCtUgQAvD_BwE)  

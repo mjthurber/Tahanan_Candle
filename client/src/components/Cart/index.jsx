@@ -12,7 +12,7 @@ import './style.css';
 
 
 // stripePromise returns a promise with the stripe object as soon as the Stripe package loads
-const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+const stripePromise = loadStripe('pk_test_51OgyJGJSv89w4eKZqvrWn510xufvVIMZlJaRMQGq51tuCXAGdk4w9z6WAx3lF1KNea7AnkTbdMaC4FCQuFcMoihl00WeeJLyrO');
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();

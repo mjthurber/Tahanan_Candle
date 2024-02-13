@@ -1,5 +1,4 @@
 import React from "react";
-// import Header from '../components/Header/Header';
 import Nav from '../components/Nav/Navbar'
 import Button from 'react-bootstrap/Button';
 import emailjs from '@emailjs/browser';
@@ -23,12 +22,11 @@ const Contact = () => {
     return (
         <>
             <Nav />
-            {/* <Header pageName={"Contact Us"} /> */}
             <main className="contact-page">
                 <Container className='mt-5'>
                     <form id="contact-form" onSubmit={sendEmail}>
                         <h4>Contact Form</h4>
-                        <p className="info">Please feel free to contact us about any questions or concerns you may have. You can email us directly at <b>TahananCandle@gmail.com</b> or fill out our form below:</p>
+                        <p className="info">Please feel free to contact us about any questions or concerns you may have. You can email us directly at <b>contact.us@tahanancandleco.com</b> or fill out our form below:</p>
 
 
                         <div className="col-md-4 mb-3">
