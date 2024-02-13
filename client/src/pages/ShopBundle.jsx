@@ -1,5 +1,4 @@
 import React from "react";
-// import Header from '../components/Header/Header';
 import Nav from '../components/Nav/Navbar'
 import Button from 'react-bootstrap/Button';
 import emailjs from '@emailjs/browser';
@@ -13,7 +12,7 @@ const ShopBundle = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_BULK_TEMPLATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY);
-        alert("Your message has been sent!")
+        alert("Your request has been sent!")
         let frm = document.getElementById('bundle-form');
         frm.reset();
     }

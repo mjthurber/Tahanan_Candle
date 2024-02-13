@@ -12,17 +12,21 @@ import ubelicious from "../../assets/Ubelicious_8oz.jpg";
 
 import citrus from "../../assets/scent-profiles/citrus.png";
 import coconut from "../../assets/scent-profiles/coconut.png";
-import vanilla from "../../assets/scent-profiles/vanilla.png"
+import vanilla from "../../assets/scent-profiles/vanilla.png";
+
+import { Link } from 'react-router-dom';
+
+
+
 //removed capitalization from the file name
 const Shop = () => {
   return (
     <Container className="mt-5">
       <h2 className="arrivals">🐚 NEW ARRIVALS 🐚</h2>
       <p className="new-info"></p>
-
       <Row>
         <Col>
-          <Card className="bg-dark text-white" style={{ width: "18rem" }}>
+          <Card className="bg-dark text-white" style={{ width: "18rem", margin: "auto" }}>
             <Card.Img variant="top" className="home-product" src={kalamansi} />
             <Card.Body>
               <Card.Title>KALAMANSI FLOWER </Card.Title>
@@ -44,14 +48,11 @@ const Shop = () => {
                 Citrus Leaves
               </ListGroup.Item>
             </ListGroup>
-            <Card.Body>
-              <Card.Link href={`/products/65ca8f3671882181b624b4fa`}>See Details</Card.Link>
-            </Card.Body>
           </Card>
         </Col>
 
         <Col>
-          <Card className="bg-dark text-white" style={{ width: "18rem" }}>
+          <Card className="bg-dark text-white" style={{ width: "18rem", margin: "auto" }}>
             <Card.Img variant="top" className="home-product" src={pandan} />
             <Card.Body>
               <Card.Title>PANDAN</Card.Title>
@@ -73,14 +74,11 @@ const Shop = () => {
                 Vanilla
               </ListGroup.Item>
             </ListGroup>
-            <Card.Body>
-              <Card.Link href={`/products/65ca8f3671882181b624b4f9`}>See Details</Card.Link>
-            </Card.Body>
           </Card>
         </Col>
 
         <Col>
-          <Card className="bg-dark text-white" style={{ width: "18rem" }}>
+          <Card className="bg-dark text-white" style={{ width: "18rem", margin: "auto" }}>
             <Card.Img variant="top" className="home-product" src={ubelicious} />
             <Card.Body>
               <Card.Title>UBELICIOUS</Card.Title>
@@ -102,51 +100,12 @@ const Shop = () => {
                 Creamy Coconut
               </ListGroup.Item>
             </ListGroup>
-            <Card.Body>
-              <Card.Link href={`/products/65ca8f3671882181b624b4f8`}>See Details</Card.Link>
-            </Card.Body>
           </Card>
         </Col>
-      </Row>
 
-      {/* <Row>
-          <Col className='col'>
-            <Card className="bg-dark text-white">
-              <Card.Img src={pandan} alt="Card image" />
-              <Card.Body>
-                <Card.Title>Kalamansi Flower</Card.Title>
-                <Card.Text>
-                  Kalamansi, also known as Calamansi or Philippine Lime, is a citrus fruit native to the Philippines. This fragrance features a refreshing citrusy scent. 
-                </Card.Text>
-                <Button href="/candles/kalamansi-flower">View Detials</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="bg-dark text-white">
-              <Card.Img src={kalamansi} alt="Card image" />
-              <Card.Body>
-                <Card.Title>Kalamansi Flower</Card.Title>
-                <Card.Text>
-                  Kalamansi, also known as Calamansi or Philippine Lime, is a citrus fruit native to the Philippines. This fragrance features a refreshing citrusy scent. 
-                </Card.Text>
-                <Button href="/candles/kalamansi-flower">View Details</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="bg-dark text-white">
-              <Card.Img src={kalamansi} alt="Card image" />
-              <Card.Body>
-                <Card.Title>Kalamansi Flower</Card.Title>
-                <Card.Text>
-                  Kalamansi, also known as Calamansi or Philippine Lime, is a citrus fruit native to the Philippines. This fragrance features a refreshing citrusy scent. 
-                </Card.Text>
-                <Button href="/candles/kalamansi-flower">View Details</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row> */}
+      </Row>
+      <Link to="/candles" style={{margin: "auto", width: "100%", maxWidth: "500px", backgroundColor: "#293F14", padding: "1%", marginTop: "2%", borderRadius: "5px", textDecoration: "none", textAlign: "center"}}className='text-white'>View All Candles</Link>
+
     </Container>
   );
 };

@@ -1,26 +1,7 @@
 import { gql } from '@apollo/client';
 
-// export const QUERY_PRODUCTS = gql`
-//   query getProducts() {
-//     products() {
-//       _id
-//       name
-//       description
-//       fragranceNotes
-//       signatureNotes
-//       inspiration
-//       intendedExperience
-//       pleaseNote
-//       price
-//       quantity
-//       image
-//       size
-//     }
-//   }
-// `;
-
 export const QUERY_CHECKOUT = gql`
-  query getCheckout($products: [ProductInput]) {
+  query getCheckout($products: [ProductInput]!) {
     checkout(products: $products) {
       session
     }
