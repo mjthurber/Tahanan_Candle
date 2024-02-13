@@ -22,7 +22,6 @@ const Footer = () => {
               <MDBRow className='mt-3'>
                 <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
                   <h6 className='text-uppercase fw-bold mb-4'>
-                    <MDBIcon icon="fire" className="me-3" />
                     Tahanan Candle Company
                   </h6>
                   <p>
