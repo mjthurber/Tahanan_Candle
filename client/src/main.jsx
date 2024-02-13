@@ -12,6 +12,8 @@ import ShoppingCart from './pages/ShoppingCart';
 import Contact from './pages/Contact';
 import ShopBundle from './pages/ShopBundle';
 import Signup from './pages/Signup.jsx';
+import Privacy from './pages/Privacy';
+
 
 import IndividualProduct from './pages/IndividualProduct';
 import OrderHistory from './pages/OrderHistory.jsx';
@@ -59,7 +61,23 @@ const router = createBrowserRouter([
       {
         path: '/signup',
         element: <Signup />
-      }
+      },
+      {
+        path: '/privacy',
+        element: <Privacy />
+      },
+      {
+        path: '/terms',
+        element: <Terms />
+      },
+      {
+        path: '/shipping',
+        element: <Shipping />
+      },
+      {
+        path: '/returns',
+        element: <Returns />
+      },
     ]
   }
 ]);
