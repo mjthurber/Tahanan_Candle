@@ -2,8 +2,9 @@
 
 ## Description
 This website is for a small, Filipina-owned candle company based in SLC, Utah. We created this project to help the client sell their uniquely scented candles inspired from Philippines scents and culture.  
+
 Check out the deployed website here: [Tahanan Candle Co.](https://tcc-v10.onrender.com/)  
-![project screenshots]()  
+![project screenshot](./project-screenshot.png)  
 
 ## Table of Contents
 If your README is long, add a table of contents to make it easy for users to find what they need.
@@ -14,21 +15,29 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Credits](#credits)
 
 ## Installation
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.  
-```npm install```
+What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running. 
+1. ```npm install```
+2. Create a free EmailJS account (optional)
 
 ## Usage
 Provide instructions and examples for use. Include screenshots as needed. 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:   
-
 Steps to run project in VS Code  
-1. ```npm run seed```  
-2. ```npm run develop```
+1. Create a .env file in the client folder containing your EmailJs variables: (optional: for forms to work)  
+```
+VITE_SERVICE_ID=yourID
+VITE_TEMPLATE_ID=yourTemplateId
+VITE_BULK_TEMPLATE_ID=yourTemplateId
+VITE_PUBLIC_KEY=yourPublicKey
+```
+2. ```npm run seed```  
+3. ```npm run develop```
 
 ## Features
 - Users can create/login to an account
 - View list of items available for purchase
 - Add items to cart and checkout
+- Fill out and send a contact form with EmailJS
+![project screenshot](./project-cart-screenshot.png)  
 
 
 ## Credits
