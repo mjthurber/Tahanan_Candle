@@ -56,6 +56,10 @@ const resolvers = {
     },
     checkout: async (parent, args, context) => {
       const url = new URL(context.headers.referer).origin;
+
+console.log(url)
+
+
       await Order.create({ products: args.products.map(({ _id }) => _id) });
       // eslint-disable-next-line camelcase
       const line_items = [];
@@ -68,15 +72,17 @@ const resolvers = {
             product_data: {
               name: product.name,
               description: product.description,
-              fragranceNotes: product.fragranceNotes,
-              middleNotes: product.middleNotes,
-              baseNotes: product.baseNotes,
-              signatureNotes: product.signatureNotes,
-              inspiration: product.inspiration,
-              intendedExperience: product.intendedExperience,
-              pleaseNote: product.pleaseNote,
-              size: product.size,
-              images: [`${url}/images/${product.image}`]
+              // fragranceNotes: product.fragranceNotes,
+              // signatureNotes: product.signatureNotes,
+              // inspiration: product.inspiration,
+              // intendedExperience: product.intendedExperience,
+              // pleaseNote: product.pleaseNote,
+              images: [`${url}/images/${product.image}`],
+              // quantity: product.quantity,
+              // price: product.price,
+              // size: product.size,
+              // baseNotes: product.baseNotes,
+              // middleNotes: product.middleNotes,
             },
             unit_amount: product.price * 100,
           },

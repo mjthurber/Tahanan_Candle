@@ -26,9 +26,6 @@ const productSchema = new Schema({
   pleaseNote: {
     type: String
   },
-  size: {
-    type: String
-  },
   image: {
     type: String
   },

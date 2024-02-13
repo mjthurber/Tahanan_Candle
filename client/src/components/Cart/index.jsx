@@ -16,7 +16,25 @@ const stripePromise = loadStripe('pk_test_51OgyJGJSv89w4eKZqvrWn510xufvVIMZlJaRM
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
-  const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
+  // const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
+
+  const [getCheckout, { loading, data }] = useLazyQuery(QUERY_CHECKOUT, {
+    onCompleted: (data) => {
+      console.log('data:', data)
+    },
+  })
+
+  useEffect(() => {
+    if (loading) {
+      console.log("loading")
+    }
+    else {
+      console.log("not loading")
+      console.log(data)
+    }
+  }, [loading, data]);
+
+
 
   useEffect(() => {
     if (data) {
@@ -51,6 +69,8 @@ const Cart = () => {
 
 
   function submitCheckout() {
+    console.log("submitCheckout")
+    console.log(state.cart)
 
     getCheckout({
       variables: { 
