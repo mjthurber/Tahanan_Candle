@@ -3,7 +3,7 @@
 ## Description
 This website is for a small, Filipina-owned candle company based in SLC, Utah. We created this project to help the client sell their uniquely scented candles inspired from Philippines scents and culture.  
 
-Check out the deployed website here: [Tahanan Candle Co.](https://tcc-v10.onrender.com/)  
+Check out the deployed website here: [Tahanan Candle Co.](https://tahanancandleco.onrender.com/)  
 ![project screenshot](./project-screenshot.png)  
 
 ## Table of Contents
