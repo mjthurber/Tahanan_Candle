@@ -17,8 +17,8 @@ const Footer = () => {
             </div>
           </section>
     
-          <section className=''>
-            <MDBContainer className='text-center text-md-start mt-5'>
+          <section>
+            <MDBContainer style={{ backgroundColor: 'rgba(0, 0, 0, 0)', boxShadow: 'none' }} className='text-center text-md-start mt-5 '>
               <MDBRow className='mt-3'>
                 <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
                   <h6 className='text-uppercase fw-bold mb-4'>
@@ -82,7 +82,7 @@ const Footer = () => {
                   <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
                   <p>
                     <MDBIcon icon="home" className="me-2" />
-                    Salt Lake City, Utah, US
+                    Salt Lake City, UT, US
                   </p>
                   <p>
                     <MDBIcon icon="envelope" className="me-3" />
