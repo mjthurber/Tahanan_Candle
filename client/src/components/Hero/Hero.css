@@ -29,12 +29,17 @@
 }
 
 .arrow {
-    height: 50px;
-    width: 50px;
+    width: auto;
     display: flex;
     justify-content: center;
     margin: auto;
-
+    text-align: center;
+    margin: 1% auto;
+}
+.arrow img {
+    height: 50px;
+    width: 50px;
+    margin: auto;
 }
 
 #hero-card-styling {
