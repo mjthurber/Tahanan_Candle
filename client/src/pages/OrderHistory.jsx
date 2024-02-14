@@ -3,8 +3,10 @@ import Nav from '../components/Nav/Navbar'
 
 import { useQuery } from '@apollo/client';
 import { QUERY_USER } from '../utils/queries';
-import './orderHistory.css'
-import '../components/ProductItem/'
+import './orderHistory.css';
+import '../components/ProductItem/';
+import Footer from '../components/Footer/Footer';
+
 
 
 const styles = {
@@ -55,6 +57,7 @@ function OrderHistory() {
           </>
         ) : null}
       </div>
+      <Footer />
     </>
   );
 }
