@@ -1,15 +1,27 @@
-.historyImage {
-    width: 300px;
-    margin-top: 15px;
-    border-radius: 5px;
+.order-cards {
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
 }
 
 .card {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     text-align: center;
-    margin-top: 40px !important;
+    margin: 2% auto;
 }
 
+.historyImage {
+    width: 300px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+
+
 .price {
-    margin-bottom: 15px !important;
+    margin: 30px;
 }

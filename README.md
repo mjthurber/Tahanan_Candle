@@ -34,8 +34,8 @@ VITE_PUBLIC_KEY=yourPublicKey
 
 ## Features
 - Users can create/login to an account
-- View list of items available for purchase
-- Add items to cart and checkout
+- View items available for purchase
+- Add items to cart and checkout using Stripe
 - Fill out and send a contact form with EmailJS
 ![project screenshot](./project-cart-screenshot.png)  
 

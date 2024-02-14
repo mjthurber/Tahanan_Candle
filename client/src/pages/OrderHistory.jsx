@@ -37,9 +37,9 @@ function OrderHistory() {
                 <h3>
                   {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}
                 </h3>
-                <div className="flex">
+                <div className="order-cards">
                   {order.products.map(({ _id, image, name, price }, index) => (
-                    <div key={index} className="card bg-dark text-white">
+                    <div key={index} className="card bg-dark text-white purchase-item">
                       <Link to={`/products/${_id}`} className='text-white'>
                         <img alt={name} src={`/images/${image}`} className='historyImage' style={styles.imgStyle}/>
                         <p>{name}</p>
