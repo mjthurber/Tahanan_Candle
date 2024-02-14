@@ -28,6 +28,7 @@ VITE_SERVICE_ID=yourID
 VITE_TEMPLATE_ID=yourTemplateId
 VITE_BULK_TEMPLATE_ID=yourTemplateId
 VITE_PUBLIC_KEY=yourPublicKey
+VITE_STRIPE_KEY=yourStripeKey
 ```
 2. ```npm run seed```  
 3. ```npm run develop```
