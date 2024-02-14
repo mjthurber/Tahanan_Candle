@@ -5,10 +5,16 @@ import Row from 'react-bootstrap/Row'
 import logo from "../../assets/logo.png";
 // import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 
+const styles = {
+  footerBg:{
+    background: 'linear-gradient(#fce384, #FFE160)!important'
+  }
+}
+
 const Footer = () => {
   return (
-    <div>
-      <Container className="mt-3 py-3">
+    <div style={{background:'linear-gradient(#FBE68A, #FFE160)'}}>
+      <Container className="mt-3 py-5" >
         <Row className="my-3">
           <Col md={4} sm={12} className="justify-content-xs-center">
             <img 
