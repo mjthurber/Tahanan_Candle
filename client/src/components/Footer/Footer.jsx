@@ -18,10 +18,10 @@ const Footer = () => {
             />
           </Col>
           <Col md={8} sm={12} className="d-flex flex-lg-row-reverse flex-md-row-reverse justify-content-xs-center flex-wrap">
-            <a href="/privacy" className="m-3">Privacy Policy</a>
-            <a href="/terms" className="m-3" >Terms of Service</a>
-            <a href="/shipping" className="m-3">Shipping Information</a>
-            <a href="/returns" className="m-3">Returns</a>
+            <a href="/privacy" className="m-3" style={{textDecoration: "none", color: "black"}}>Privacy Policy</a>
+            <a href="/terms" className="m-3" style={{textDecoration: "none", color: "black"}}>Terms of Service</a>
+            <a href="/shipping" className="m-3" style={{textDecoration: "none", color: "black"}}>Shipping Information</a>
+            <a href="/returns" className="m-3" style={{textDecoration: "none", color: "black"}}>Returns</a>
           </Col>
         </Row>
         <Row className="py-3">
