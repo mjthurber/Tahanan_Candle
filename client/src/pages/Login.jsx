@@ -5,7 +5,9 @@ import { LOGIN } from '../utils/mutations';
 import Button from "react-bootstrap/Button";
 import Auth from '../utils/auth';
 import Nav from '../components/Nav/Navbar'
-import "./login.css"
+import "./login.css";
+import Footer from '../components/Footer/Footer';
+
 
 function Login(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -33,7 +35,8 @@ function Login(props) {
   };
 
   return (
-    <div>
+    <>
+    <div style={{minHeight:"100vh"}}>
       <Nav />
       <div className='container loginBox flex flex-column bg-dark text-white'>
         <Link to="/signup" className='text-white'>← Go to Signup</Link>
@@ -71,6 +74,8 @@ function Login(props) {
         </form>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 
