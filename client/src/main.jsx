@@ -16,7 +16,7 @@ import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import Returns from './pages/Returns';
 import Shipping from './pages/Shipping';
-import Success from './pages/success';
+import Success from './pages/Success';
 
 
 
