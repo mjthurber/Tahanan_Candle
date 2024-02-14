@@ -26,7 +26,7 @@
 }
 
 .arrow {
-    margin: 0px 300px;
+    margin: auto;
     height: 30px;
     width: 30px;
     display: flex;
@@ -35,6 +35,7 @@
 
 .p1 {
     padding-top: 50px;
+    padding-top: 25px;
 }
 
 p {
