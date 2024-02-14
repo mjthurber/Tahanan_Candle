@@ -10,9 +10,8 @@ import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import cart_icon from "../../assets/cart_icon5.png";
 import './style.css';
 
-
 // stripePromise returns a promise with the stripe object as soon as the Stripe package loads
-const stripePromise = loadStripe('pk_test_51OgyJGJSv89w4eKZqvrWn510xufvVIMZlJaRMQGq51tuCXAGdk4w9z6WAx3lF1KNea7AnkTbdMaC4FCQuFcMoihl00WeeJLyrO');
+const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_KEY);
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
