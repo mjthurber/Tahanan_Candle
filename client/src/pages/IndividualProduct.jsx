@@ -61,6 +61,10 @@ function IndividualProduct() {
         _id: product._id,
         price: product.price,
         quantity: product.quantity,
+        description: product.description,
+        signatureNotes: product.signatureNotes,
+        inspiration: product.inspiration,
+        pleaseNote: product.pleaseNote
       };
 
       console.log(item);
