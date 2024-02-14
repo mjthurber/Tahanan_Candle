@@ -22,7 +22,11 @@ What are the steps required to install your project? Provide a step-by-step desc
 ## Usage
 Provide instructions and examples for use. Include screenshots as needed. 
 Steps to run project in VS Code  
-1. Create a .env file in the client folder containing your EmailJs variables: (optional: for forms to work)  
+1. Create a .env  
+```
+STRIPEKEY=yourStripeKey
+```
+2. Create a .env file in the client folder containing your EmailJs variables: (optional: for forms & checkout to work)  
 ```
 VITE_SERVICE_ID=yourID
 VITE_TEMPLATE_ID=yourTemplateId
@@ -30,8 +34,8 @@ VITE_BULK_TEMPLATE_ID=yourTemplateId
 VITE_PUBLIC_KEY=yourPublicKey
 VITE_STRIPE_KEY=yourStripeKey
 ```
-2. ```npm run seed```  
-3. ```npm run develop```
+3. ```npm run seed```  
+4. ```npm run develop```
 
 ## Features
 - Users can create/login to an account
