@@ -1,9 +1,11 @@
 import React from 'react';
 import Nav from '../components/Nav/Navbar';
 import Container from 'react-bootstrap/Container';
+import Footer from '../components/Footer/Footer';
 
 const Shipping = () => {
     return(
+        <>
         <div>
             <Nav/>
             <Container className='mt-3 text-left'>
@@ -21,6 +23,8 @@ const Shipping = () => {
                 <p>If you have any further questions, please don't hesitate to contact us at TahananCandle@gmail.com</p>
             </Container>
         </div>
+        <Footer />
+        </>
     )
 }
 export default Shipping;
