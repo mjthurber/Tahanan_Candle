@@ -29,25 +29,25 @@ p {
     font-weight: normal;
 }
 
-.flex {
+.about-flex {
     display: flex;
     margin: auto;
     width: 100%;
 }
 
-.flex div {
+.about-flex div {
     margin: auto;
 }
 
 
 @media only screen and (max-width: 700px) {
-    .flex {
+    .about-flex {
         display: block;
         margin: auto;
         width: 100%;
         text-align: center;
     }
-    .flex h1, .flex p {
+    .about-flex h1, .about-flex p {
         text-align: left;
     }
 }

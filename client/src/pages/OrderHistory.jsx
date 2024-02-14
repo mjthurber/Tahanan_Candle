@@ -3,8 +3,10 @@ import Nav from '../components/Nav/Navbar'
 
 import { useQuery } from '@apollo/client';
 import { QUERY_USER } from '../utils/queries';
-import './orderHistory.css'
-import '../components/ProductItem/'
+import './orderHistory.css';
+import '../components/ProductItem/';
+import Footer from '../components/Footer/Footer';
+
 
 
 const styles = {
@@ -37,9 +39,9 @@ function OrderHistory() {
                 <h3>
                   {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}
                 </h3>
-                <div className="flex">
+                <div className="order-cards">
                   {order.products.map(({ _id, image, name, price }, index) => (
-                    <div key={index} className="card bg-dark text-white">
+                    <div key={index} className="card bg-dark text-white purchase-item">
                       <Link to={`/products/${_id}`} className='text-white'>
                         <img alt={name} src={`/images/${image}`} className='historyImage' style={styles.imgStyle}/>
                         <p>{name}</p>
@@ -55,6 +57,7 @@ function OrderHistory() {
           </>
         ) : null}
       </div>
+      <Footer />
     </>
   );
 }

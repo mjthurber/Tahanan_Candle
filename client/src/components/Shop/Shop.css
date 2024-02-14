@@ -11,6 +11,10 @@
   font-weight: 600;
 }
 
+.shop-card {
+  margin: 2%;
+}
+
 .new-info {
   text-align: center;
   margin-top: 0px;
@@ -30,8 +34,13 @@
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.381);
 }
 
-.col{
+col{
   box-shadow: 5px rgba(0, 0, 0, 0.381);
+}
+
+.mt-5 .col{
+  margin: 2% auto;
+
 }
 
 .scent_icon{

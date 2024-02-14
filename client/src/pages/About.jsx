@@ -1,5 +1,4 @@
 import React from "react";
-// import Header from '../components/Header/Header';
 import owner from "../assets/owner.jpg";
 import pandan from "../assets/Pandan_8oz.jpg";
 import ubelicious from "../assets/Ubelicious_8oz.jpg";
@@ -15,10 +14,8 @@ const About = () => {
   return (
     <>
     <Nav/>
-    {/* <Header pageName={"About Us"}/> */}
-
      <main>
-        <div className="flex">
+        <div className="about-flex">
           <img className="aboutImages" src={owner} alt="owner" />
           <div>
             <h1>Mabuhay!</h1>
@@ -49,7 +46,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="flex">
+          <div className="about-flex">
             <div>
               <p><b>A Fragrance for Every Story:</b> I've carefully curated scents that mirror the diverse landscapes of
                 the Philippines. Whether you're longing for the tropical sweetness
@@ -77,7 +74,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="flex">
+          <div className="about-flex">
             <img className="aboutImages" src={pandan} alt="pandan" />
             <div>
               <p><b>Reusable Containers:</b> Many of my candle containers are designed to be reusable. After your

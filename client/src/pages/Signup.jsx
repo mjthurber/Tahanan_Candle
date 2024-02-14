@@ -8,6 +8,8 @@ import { ADD_USER } from "../utils/mutations";
 import "./signup.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from '../components/Footer/Footer';
+
 
 import React from "react";
 import {
@@ -190,6 +192,7 @@ theme: "light",
                 </MDBCard>
                 <ToastContainer />
             </MDBContainer>
+            <Footer />
         </>
     );
 }

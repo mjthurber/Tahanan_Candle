@@ -26,7 +26,7 @@ const Shop = () => {
       <p className="new-info"></p>
       <Row>
         <Col>
-          <Card className="bg-dark text-white" style={{ width: "18rem", margin: "auto" }}>
+          <Card className="bg-dark text-white shop-card" style={{ width: "18rem", margin: "auto"}}>
             <Card.Img variant="top" className="home-product" src={kalamansi} />
             <Card.Body>
               <Card.Title>KALAMANSI FLOWER </Card.Title>
