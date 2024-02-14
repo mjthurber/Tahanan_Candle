@@ -37,12 +37,18 @@ const startApolloServer = async () => {
 
   }
   
-  // fix
-  // app.get("/*", (req, res) => {
-  //   app.get("/", (req, res) => {
+  // fix option b
+  // app.get("/", (req, res) => {
   //   res.sendFile(path.join(__dirname, "../client/dist/index.html"));
   // });
 
+  //fix option c
+  // // app.get("/*", (req, res) => {
+  //   app.get("/", (req, res) => {
+  // //   res.sendFile(path.join(__dirname, "../client/dist/index.html"));
+  // // });
+
+  //fix option d
   // app.get("/success", (req, res) => {
   //   res.sendFile(path.join(__dirname, "../client/dist/index.html"));
   // });
