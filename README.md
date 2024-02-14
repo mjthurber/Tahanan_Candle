@@ -52,6 +52,7 @@ The collaborators for this project were:
 [Maggie McCausland](https://github.com/maggiemcc)  
 [Britt Young](https://github.com/britt-young)  
 [Joshua Higginson](https://github.com/joshhigg)  
+[Steve Calla](https://github.com/stevecalla) 
 
 Resources/Technologies used:  
 [Vite](https://vitejs.dev/)  
