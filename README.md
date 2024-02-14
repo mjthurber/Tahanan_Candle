@@ -52,8 +52,7 @@ The collaborators for this project were:
 [Maggie McCausland](https://github.com/maggiemcc)  
 [Britt Young](https://github.com/britt-young)  
 [Joshua Higginson](https://github.com/joshhigg)  
-Special thanks too:  
-[Steve Calla](https://github.com/stevecalla) 
+Special thanks to: [Steve Calla](https://github.com/stevecalla) for helping us solve StripeAPI and deployment issues.
 
 Resources/Technologies used:  
 [Vite](https://vitejs.dev/)  
