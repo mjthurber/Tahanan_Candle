@@ -1,7 +1,5 @@
 const { User, Product, Order } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
-// const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
-//fix
 const stripe = require('stripe')('sk_test_51OgyJGJSv89w4eKZ6UM0CBlowqoxZ8j2IHnz2dUqZcNVH7JtnDSkVVv6griCrDBKV6p11uFBQvXS7CykogQC2EwO004S2Fy1Tm');
 
 const resolvers = {
@@ -69,17 +67,7 @@ const resolvers = {
             product_data: {
               name: product.name,
               description: product.description,
-              // fragranceNotes: product.fragranceNotes,
-              // signatureNotes: product.signatureNotes,
-              // inspiration: product.inspiration,
-              // intendedExperience: product.intendedExperience,
-              // pleaseNote: product.pleaseNote,
               images: [`${url}/images/${product.image}`],
-              // quantity: product.quantity,
-              // price: product.price,
-              // size: product.size,
-              // baseNotes: product.baseNotes,
-              // middleNotes: product.middleNotes,
             },
             unit_amount: product.price * 100,
           },

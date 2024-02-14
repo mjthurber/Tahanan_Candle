@@ -10,7 +10,6 @@ export function useProductReducer(initialState) {
 
 const StoreProvider = ({ value = [], ...props }) => {
   const [state, dispatch] = useProductReducer({
-  // const [state, dispatch] = useReducer(reducer, { ///fix
     products: [],
     cart: [],
     cartOpen: false,

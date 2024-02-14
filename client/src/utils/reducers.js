@@ -9,8 +9,6 @@ import {
 } from "./actions";
 
 export const reducer = (state, action) => {
-
-  // console.log('reducers', state);
   
   switch (action.type) {
     case UPDATE_PRODUCTS:

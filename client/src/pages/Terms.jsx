@@ -128,7 +128,6 @@ const Terms = () => {
                     Questions about the Terms of Service should be sent to us at TahananCandle@gmail.com
                 </p>
             </Container>
-            <Footer/>
         </div>
     )
 }
